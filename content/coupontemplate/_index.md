@@ -2,7 +2,7 @@
 title: Coupon template
 weight: 40
 ---
-After capturing a deal, a coupon for the deal is available for user. User can print coupon or show it on his/her phone to merchant.
+After capturing a deal, a coupon for the deal is available for user. The user can print the coupon or show it to the merchant on their phone.
 
 To design how coupon on your site looks like, go to Components -> CM Live Deal -> Coupon Template.
 
@@ -22,7 +22,7 @@ To display the information of deal on your coupon, you can use the following tag
 *   **{merchant}**: Merchant's name.
 *   **{address}**: Merchant's address.
 *   **{phone}**: Merchant's phone.
-*   **{captured}**: Date when the coupon is captured.
-*   **{expired}**: Date when the coupon is expired.
+*   **{captured}**: The date the coupon was captured.
+*   **{expired}**: The date the coupon expires.
 
-When coupon is showed to user, the tags are replaced by deal's information.
+When a coupon is shown to the user, the tags are replaced with the deal's information.

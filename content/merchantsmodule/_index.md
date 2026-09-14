@@ -26,14 +26,14 @@ In `Options` tab, you can configure the main settings of the module.
 
 ![/images/mod_cmlivedeal_merchants_tab_options.png](/images/mod_cmlivedeal_merchants_tab_options.png)
 
-*   **Merchants**: The merchants who are displayed in the module. To select a merchant you click the person icon then select a merchant in the popup, after that you click the plus icon to add the selected merchant to the list.
-*   **Show deal quantity**: Show the number of deals that a merchant currently has.
-*   **<ul> CSS class**: CSS classes that are applied to <ul> HTML element.
-*   **<li> CSS class**: CSS classes that are applied to <li> HTML element.
-*   **Deal quantity CSS class**: CSS classes that are applied to deal quantity.
-*   **<ul> CSS style**: CSS styles that are applied to <ul> HTML element.
-*   **<li> CSS style**: CSS styles that are applied to <li> HTML element.
-*   **Deal quantity CSS style**: CSS styles that are applied to deal quantity.
+*   **Merchants**: The merchants to show in the module. To add a merchant, click the person icon and choose a merchant in the popup, then click the plus icon to add them to the list.
+*   **Show number of deals**: Show the number of deals next to each merchant.
+*   **`<ul>` CSS class**: CSS class for the `<ul>` element.
+*   **`<li>` CSS class**: CSS class for the `<li>` elements.
+*   **Number of deals CSS class**: CSS class for the number of deals.
+*   **`<ul>` CSS style**: Inline CSS style for the `<ul>` element.
+*   **`<li>` CSS style**: Inline CSS style for the `<li>` elements.
+*   **Number of deals CSS style**: Inline CSS style for the number of deals.
 
 CSS fields are useful if you want to customize the elements to match your template's style. This requires your skills in HTML and CSS.
 

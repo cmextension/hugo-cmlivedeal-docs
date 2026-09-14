@@ -18,14 +18,14 @@ In `Options` tab, you can configure the main settings of the module.
 
 ![/images/mod_cmlivedeal_search_tab_options.png](/images/mod_cmlivedeal_search_tab_options.png)
 
-*   **Display**: How search form is displayed, there are 3 styles, `Inline`, `Horizontal`, `Vertical`. You can see how search form looks like in these styles in the screenshot below.
-*   **Keyword field's CSS**: Custom CSS classes for keyword input field.
-*   **Category list's CSS**: Custom CSS classes for category dropdown list.
-*   **City list's CSS**: Custom CSS classes for city dropdown list.
-*   **Search button's CSS**: Custom CSS classes for search button.
-*   **Clear button's CSS**: Custom CSS classes for clear button.
-*   **Display Clear button**: Display or hide clear button.
-*   **Button's label**:
+*   **Display**: How the search form is laid out: `Inline` or `Vertical`. The inline layout shows no labels. You can see both layouts in the examples below.
+*   **Keyword field CSS**: CSS classes for the keyword field.
+*   **Category list CSS**: CSS classes for the category drop-down list.
+*   **City list CSS**: CSS classes for the city drop-down list.
+*   **Search button CSS**: CSS classes for the Search button.
+*   **Clear button CSS**: CSS classes for the Clear button.
+*   **Show Clear button**: Show a Clear button that resets the search.
+*   **Button labels**: What the Search and Clear buttons show:
     *   _Use icon_: Use only icons for search and clear buttons.
     *   _Use text_: Use only text for search and clear buttons.
     *   _Use icon and text_: Use both icon and text for search and clear buttons.

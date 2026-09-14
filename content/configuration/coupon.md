@@ -5,22 +5,23 @@ weight: 100
 
 ![/images/com_cmlivedeal_coupon.png](/images/com_cmlivedeal_coupon.png)
 
-*   **Coupon code's length**: The number of characters in a coupon code. Default value is 5.
-*   **Coupon's characters**: The character's types in coupon code. Default is alphanumeric. Coupon code's characters are always uppercase.
-    *   _Latin alphabetic characters only (from A to Z)_: for example, `GWLCA`.
-    *   _Latin numeric characters only (from 0 to 9)_: for example, `83061`.
-    *   _Latin alphabetic and numeric_: for example, `F52H2`.
+*   **Coupon code length**: The number of characters in a coupon code. The default is 5.
+*   **Coupon code characters**: The type of characters used in coupon codes. The default is letters and digits. Letters are always uppercase.
+    *   _Letters only (A to Z)_: for example, `GWLCA`.
+    *   _Digits only (0 to 9)_: for example, `83061`.
+    *   _Letters and digits (A to Z, 0 to 9)_: for example, `F52H2`.
 *   **Coupon format**:
-    *   _HTML_: Coupon in HTML format (a web page).
-    *   _PDF_: Coupon in PDF format. You need to install mPDF library package. Please view [PDF coupon](pdfcoupon.html#ref-pdfcoupon) section for more information.
-*   **QR code's size**: The size of coupon's QR code in pixel.
-*   **Guest can get coupon**: Allow guests can capture coupons without registering accounts.
-*   **Limit coupon quantity**: Enable this option to give administrators and merchants ability to set and change coupon quantity for every deal. If this option is disabled, coupon quantity is unlimited.
-*   **Limit 1 coupon per registered user**: Enable this option if you only allow a registered user to get 1 coupon for 1 deal. Disable this option if you want to allow registered users to get unlimited coupon for every deal.
-*   **Merchant's QR code scanner**: This QR code scanner helps merchants find and redeem coupon code quickly by scanning customer's QR code.
-*   **Quantity of recent scanned coupon**: Recent scanned coupons are kept in session and shown next to the QR code scanner, this option lets you configure how many coupons are shown.
-*   **Customer's QR code scanner**: The QR code scanner for customer lets customers redeem their coupons by themselves, as soon as coupon is scanned and found, it is marked as redeemed.
-*   **Prefix for customer's QR code scanner**: Custom HTML shown above customer's QR code scanner. You can use to show title and instruction.
-*   **Postfix for customer's QR code scanner**: Custom HTML shown below customer's QR code scanner. You can use to show instruction, privacy info, etc...
-*   **Component view for customer's QR code scanner**: When component view is enabled, only CM Live Deal's content is shown on the page, other elements outside of CM Live Deal like menus, modules,... are hidden.
-*   **Auto close customer QR code's modal (in seconds)**: After scanning QR code, a modal appears to let customer know that the coupon code is valid or not, this option lets you set up how long the modal is shown.
+    *   _HTML_: The coupon is a web page.
+    *   _PDF_: The coupon is a PDF file. PDF coupons need the mPDF PHP library. See the [PDF coupon](pdfcoupon.html#ref-pdfcoupon) section to learn how to install it.
+*   **QR code size (HTML coupon)**: The size of the QR code, in pixels. The default is 150. Only used for HTML coupons.
+*   **QR code size (PDF coupon)**: The size of the QR code in PDF coupons.
+*   **Guest can get coupon**: Allow visitors to get coupons without registering.
+*   **Limit coupon quantity**: Let administrators and merchants set how many coupons each deal has. When this option is disabled, every deal has unlimited coupons.
+*   **One coupon per registered user**: Let each registered user get only one coupon per deal. Disable this option to let registered users get as many coupons as they want.
+*   **Merchant QR code scanner**: Enable the QR code scanner for merchants. Merchants scan the QR code on a customer's coupon to find and redeem it quickly.
+*   **Number of recently scanned coupons**: How many recently scanned coupons the QR code scanner page shows. The list is kept for the current session.
+*   **Customer QR code scanner**: Enable the QR code scanner for customers. Customers use it to redeem their own coupons: as soon as a coupon is scanned and found, it is marked as redeemed.
+*   **Text above the customer QR code scanner**: Custom HTML shown above the customer QR code scanner, for example a title and instructions.
+*   **Text below the customer QR code scanner**: Custom HTML shown below the customer QR code scanner, for example instructions or privacy information.
+*   **Component-only view for the customer QR code scanner**: Hide the rest of the site, such as menus and modules, and show only the CM Live Deal content.
+*   **Close the customer scanner message after (seconds)**: After a QR code is scanned, a message tells the customer whether the coupon code is valid. This option sets how many seconds the message stays open.

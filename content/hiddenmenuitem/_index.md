@@ -5,8 +5,8 @@ weight: 190
 
 Hidden menu item is not visible in your front-end. It is used to provide friendly URL to specific pages in CM Live Deal. At the present time there are 2 types of pages requiring hidden menu item:
 
-*   Coupon download page requires `Coupon download` menu item
-*   Merchant detail page requires `Merchant` menu item
+*   The coupon download page requires a `Coupon Download (Hidden)` menu item.
+*   The merchant page requires a `Merchant Details (Hidden)` menu item.
 
 If your `Coupon download` page is
 
@@ -16,7 +16,7 @@ then the URL to download a coupon looks like
 
 **http://yoursite.com/download-coupon/COUPON-CODE-HERE**
 
-Similar to that, for merchant detail page you can have this structure of URL
+In the same way, the merchant page can have a URL like this:
 
 **http://yoursite.com/merchants/merchant-username**
 
