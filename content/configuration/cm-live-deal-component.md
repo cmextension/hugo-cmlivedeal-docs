@@ -11,3 +11,5 @@ On the toolbar there is an `Options` button, please click this button to configu
 ![/images/com_cmlivedeal_options.png](/images/com_cmlivedeal_options.png)
 
 On the configuration page, the settings are grouped into 10 tabs: `General`, `Deal list`, `Currency`, `Merchant`, `Deal`, `Advance payment`, `Coupon`, `Administration area`, `Image`, `Permissions`.
+
+The dashboard itself is described in [Dashboard](/dashboard/).
