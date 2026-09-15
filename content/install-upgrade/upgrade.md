@@ -15,11 +15,19 @@ Most changes need nothing from you. Read this list before you upgrade, because a
 
 ### Payment plugins: action needed
 
-**PayPal** now uses PayPal's REST API. The old PayPal email and seconds-to-wait settings are gone, and they are not moved to the new settings. After the upgrade, PayPal does not work until you:
+**PayPal** keeps working after the upgrade. CM Live Deal 4.0 can take PayPal payments in two ways. You choose one with the new **Integration** option in the PayPal - CM Live Deal plugin:
+
+* **REST API** shows the PayPal buttons on your checkout page. New sites use it.
+* **PayPal Payments Standard (legacy)** sends the customer to PayPal with a form. This is how CM Live Deal 3 took payments. It uses your PayPal email and seconds-to-wait settings.
+
+If your site took PayPal payments with a PayPal email, the upgrade keeps it on PayPal Payments Standard, so your checkout does not stop. But PayPal treats PayPal Payments Standard as legacy, so switch to the REST API as soon as you can. Until you do, the [Setup card](/dashboard/setup-card/) on the dashboard reminds you. To switch:
 
 1. Create a REST app at [developer.paypal.com](https://developer.paypal.com/dashboard/applications).
-2. Enter its client ID and secret key in the PayPal - CM Live Deal plugin.
-3. Add the webhook to the app and enter its webhook ID in the plugin.
+2. In the PayPal - CM Live Deal plugin, set **Integration** to **REST API**.
+3. Enter the app's client ID and secret key.
+4. Add the webhook to the app and enter its webhook ID in the plugin.
+
+If a customer started to pay before you switched, their order is still completed when PayPal confirms the payment.
 
 **Stripe** keeps working with your secret keys. Add the webhook and enter its signing secret too. Without it, an order is only completed if the customer's browser returns to your site.
 
