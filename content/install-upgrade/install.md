@@ -28,7 +28,7 @@ Joomla! normally installs every plugin disabled. CM Live Deal needs some of its 
 * User - CM Live Deal's Merchant Profile
 * Button - CM Live Deal Image
 * Smart Search - CM Live Deal. See [Smart Search](/smart-search/).
-* Privacy - CM Live Deal
+* Privacy - CM Live Deal. See [Privacy](/privacy/).
 * Task - CM Live Deal
 
 The package only enables a plugin the first time it installs it. If you disable one of these plugins later, it stays disabled when you update CM Live Deal.
