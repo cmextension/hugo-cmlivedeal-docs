@@ -2,10 +2,15 @@
 title: Deal list
 weight: 50
 ---
-![/images/com_cmlivedeal_deal_list.png](/images/com_cmlivedeal_deal_list.png)
+![/images/options-4-0-deal-list.png](/images/options-4-0-deal-list.png)
 
-*   **Deal list columns**: The number of columns in the deal list.
-*   **Thumbnail width**: The width of deal image in deal list calculated by Bootstrap framework's 12 grid column. You can select one of the 3 options and refresh your front-end deal list until it looks good for you. This option is only used if you only have 1 column in your deal list.
+*   **Deal list columns**: The most columns the deal list shows. When the space is narrow, for example on a phone or in a narrow content area, the list shows fewer columns so the cards do not get too small:
+    *   2 or more columns need at least 560px.
+    *   3 columns need at least 880px.
+    *   4 columns need at least 1160px.
+
+    The width is the width of the deal list itself, not the whole screen.
+*   **Thumbnail width (1 column deal list)**: How much of the card the deal image takes, in parts of 12: 4/12, 5/12 or 6/12. Only used when **Deal list columns** is 1, where each card is wide with the image on the left. The deal page uses the same width for its image. Try the values and refresh your deal list to see which looks best.
 *   **Default pagination limit**: How many deals the deal list shows per page by default.
 *   **Show sorting options**: Let visitors choose how the deals in the deal list are sorted.
 *   **Show price tag**: Show price tag at the top left corner of every deal in deal list. The price tag shows how much the customer saves. It shows the fixed discount, the discount percent, or the saving on a deal which has an original price and a sale price.

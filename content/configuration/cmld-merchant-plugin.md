@@ -2,44 +2,53 @@
 title: CMLD Merchant plugin
 weight: 160
 ---
-CMLD Merchant (CM Live Deal - Merchant) is a Joomla! plugin to insert custom profile fields into Joomla! user profile. CMLD Merchant plugin provides the needed fields for merchant profile.
+The `User - CM Live Deal's Merchant Profile` plugin adds merchant profile fields to Joomla user accounts. Merchants fill in these fields when they register.
 
-Please make sure that Joomla allows user registration. Click `User` on left panel, a list expands, click `Manage`. Then click `Options` button on toolbar.
+The plugin is enabled when you install CM Live Deal. If you turn it off, later updates leave it off.
+
+Make sure Joomla allows user registration. Go to `Users` -> `Manage`, then click the `Options` button on the toolbar.
 
 ![/images/plg_user_option.png](/images/plg_user_option.png)
 
-Turn `Allow User Registration` to `Yes'
+Set `Allow User Registration` to `Yes`.
+
 ![/images/plg_user_option_allow_user_registration.png](/images/plg_user_option_allow_user_registration.png)
 
-Click `Save` button, you will see the message `Configuration saved` on top.
+Click `Save`. You see the message `Configuration saved`.
 
 ![/images/plg_user_option_allow_user_registration_saved.png](/images/plg_user_option_allow_user_registration_saved.png)
 
-To configure the plugin, you click `System` on the left panel, then click `Plugins` under `Manage` section on the right panel.
+To configure the plugin, go to `System` -> `Manage` -> `Plugins`.
 
 ![/images/plg_user_cmldmerchant_menu.png](/images/plg_user_cmldmerchant_menu.png)
 
-You can search for the plugin by using keyword `merchant`. `CM Live Deal`. etc... The plugin name is `User - CM Live Deal's merchant profile'
+Search for `CM Live Deal`. Click `User - CM Live Deal's Merchant Profile` to edit its settings.
 
-![/images/plg_user_cmldmerchant_list.png](/images/plg_user_cmldmerchant_list.png)
+![/images/merchant-plugin-4-0-options.png](/images/merchant-plugin-4-0-options.png)
 
-You click on the plugin name to edit the plugin's setting.
+*   **Registration page**: The menu item of the merchant registration page that you created before. The merchant profile fields are only shown on this page.
 
-![/images/plg_user_cmldmerchant_form.png](/images/plg_user_cmldmerchant_form.png)
+Some profile fields have a setting with 3 values:
 
-*   **Registration page**: You select the menu item of merchant registration page that you create in the above step.
-*   **Status**: You set the status to `Enabled`.
+*   **Required**: The field is shown and the merchant must fill it in.
+*   **Optional**: The field is shown and the merchant can leave it empty.
+*   **Disabled**: The field is not shown.
 
-For profile fields, you have 3 options:
+| Field | Default |
+| --- | --- |
+| Website | Optional |
+| Facebook | Optional |
+| X | Optional |
+| Pinterest | Optional |
+| Instagram | Optional |
+| About | Required |
 
-*   **Required**: Field is displayed and user must enter value.
-*   **Optional**: Field is displayed and user can leave field empty.
-*   **Disabled**: Field is not displayed in profile form.
+`Business name`, `Address` and `Phone` have no setting. They are always required. The profile form also has a map where the merchant places their location.
 
-After saving the plugin, you receive the message `Plugin saved`.
+After saving the plugin, you see the message `Plugin saved`.
 
 ![/images/plg_user_cmldmerchant_saved.png](/images/plg_user_cmldmerchant_saved.png)
 
-You can visit the page for merchant registration in your front-end to check if the merchant's profile fields are displayed there. The page could look like the following screenshot.
+Visit the merchant registration page on your site to check that the merchant profile fields are shown there. The page could look like the following screenshot.
 
 ![/images/plg_user_cmldmerchant_frontend.png](/images/plg_user_cmldmerchant_frontend.png)

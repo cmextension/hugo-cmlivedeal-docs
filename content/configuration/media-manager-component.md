@@ -2,26 +2,20 @@
 title: Media Manager component
 weight: 20
 ---
-Merchant can upload image to your site. You need to configure where the images are stored and what image extensions are allowed to upload.
+Merchants can upload images to your site. CM Live Deal uses the settings of Joomla's `Media Manager` component for these uploads: where images are stored and which file types are allowed.
 
-In your back-end, you navigate to `Content` -> `Media` to access `Media Manager` component.
+In your back-end, go to `Content` -> `Media` to open the `Media Manager` component.
 
 ![/images/com_media_menu.png](/images/com_media_menu.png)
 
-You can see the page similar to the screenshot below.
+You can see a page similar to the screenshot below.
 
 ![/images/com_media_view.png](/images/com_media_view.png)
 
-You click `Options` button on the toolbar to configure the component.
+Click the `Options` button on the toolbar to configure the component.
 
 ![/images/com_media_options.png](/images/com_media_options.png)
 
-CM Live Deal uses the configuration of `Media Manager` in uploading merchant's photo. You can adjust the default settings of Media Manager to suit your needs. If you don't have any special requirement, you can keep the default settings.
+You can change the default settings of the Media Manager to suit your needs. If you have no special needs, keep the default settings.
 
-In `Media Manager`'s main view (`Content` -> `Media`), you create a new folder to store all merchants's photos by clicking `Create New Folder` button, enter the folder name and click `Create` button.
-
-![/images/com_media_create.png](/images/com_media_create.png)
-
-You will receive `Folder Created` message if the folder is created successfully.
-
-![/images/com_media_success.png](/images/com_media_success.png)
+You do not need to create a folder for merchant images. CM Live Deal creates `images/cmlivedeal` for you when you install it. See [Image](/configuration/image/) to choose another folder.
