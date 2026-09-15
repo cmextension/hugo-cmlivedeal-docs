@@ -44,7 +44,7 @@ See [Payment plugins](/configuration/payment-plugins/) for each setting.
 
 * Every existing deal gets the access level `Public`, so everybody can still see it.
 * Every existing deal runs from its start time to its end time, as before. It gets no weekly schedule.
-* Two new email templates are added, for deals and coupons that expire soon.
+* Two new email templates are added, for deals and coupons that expire soon. See [Email templates](/email-templates/) and [Scheduled tasks](/scheduled-tasks/).
 * Some country names on saved orders are updated. For example, `Czech Republic` becomes `Czechia`, `Turkey` becomes `Türkiye`, `Swaziland` becomes `Eswatini` and `Scotland` becomes `United Kingdom`. `Netherlands Antilles`, `West Indies` and `Yugoslavia` are no longer in the list, but orders that have them keep them.
 * If you uploaded the GeoLite2 City database, it keeps working. It stays at the same path. See [Get GeoLite2 City database](/cm-live-deal-search-module/get-geolite2-city-database/).
 
