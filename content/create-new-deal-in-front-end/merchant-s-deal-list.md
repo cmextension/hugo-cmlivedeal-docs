@@ -23,4 +23,6 @@ The list has 8 columns:
 *   **Published**: The deal is published.
 *   **Ending time**: When the deal expires.
 
-Click on deal name to edit the deal. If deal is already approved, merchant can only change starting date, ending date and published status. If the deal is not approved yet, merchant still can modify the deal's details.
+Click the deal's name to edit the deal. If the deal is not approved yet, the merchant can change every field. After the deal is approved, it depends on the `Merchant can edit published deals` option. When the option is disabled, the merchant can only change the starting time, the ending time, the schedule and the status. See [Submit a new deal](/create-new-deal-in-front-end/submit-new-deal/#after-the-deal-is-approved).
+
+The `Ending time` column shows when the deal ends. A deal with a weekly schedule is also hidden from visitors between its time slots, before that time.
