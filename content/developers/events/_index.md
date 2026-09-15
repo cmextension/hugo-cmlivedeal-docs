@@ -475,6 +475,17 @@ The result needs `handled`, `gateway_id`, `complete_order`, `order_id`, `transac
 
 ## Tips
 
+* In a payment plugin, take the amount to charge from the order row, never from the request. The browser can change anything it sends. Before you mark an order as paid, check the paid amount and currency against the same row:
+
+  ```php
+  $query = $db->getQuery(true)
+      ->select($db->quoteName(['id', 'amount', 'order_status']))
+      ->from($db->quoteName('#__cmlivedeal_orders'))
+      ->where($db->quoteName('order_number') . ' = :number')
+      ->bind(':number', $orderNumber);
+  $order = $db->setQuery($query)->loadObject();
+  ```
+
 * Keep your plugin fast. Every event runs while somebody is waiting for a page.
 * Only stop an action when you have a good reason. The customer or the merchant sees the result.
 * Use `getContext()` to make sure your code runs only where you want it.

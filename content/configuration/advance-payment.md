@@ -22,5 +22,5 @@ weight: 90
 * **Hide a single payment method**: Hide the payment method choice in the checkout form when only one payment method is available.
 * **First order number**: The number that order numbers start from, instead of 1.
 * **Attach PDF coupon to order confirmation email**: Attach the PDF coupon to the email the buyer receives after a successful order.
-* **Cancellation Message**: The message shown to customers who cancel the payment and return from the payment gateway's website.
-* **Success Message**: The message shown to customers who complete the payment and return from the payment gateway's website.
+* **Cancellation Message**: The message shown on the cancel page, when customers cancel the payment or the payment fails. When the payment failed, the reason is shown above your message. It is empty by default.
+* **Success Message**: The message shown to customers who complete the payment and return from the payment gateway's website. It is empty by default.
