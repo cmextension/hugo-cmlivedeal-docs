@@ -4,7 +4,7 @@ weight: 10
 ---
 The merchants in CM Live Deal component are actually Joomla! users that are in a specific user group.
 
-In your back-end, you navigate to `Users` -> `Groups`.
+In your back-end, you navigate to `Users` -> `Groups`. If you have not chosen a merchant group yet, you can also click `New User Group` on the [Setup card](/dashboard/setup-card/) of the CM Live Deal dashboard.
 
 ![/images/com_users_group_menu.png](/images/com_users_group_menu.png)
 
