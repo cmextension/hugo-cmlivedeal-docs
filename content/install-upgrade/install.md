@@ -27,7 +27,7 @@ Joomla! normally installs every plugin disabled. CM Live Deal needs some of its 
 
 * User - CM Live Deal's Merchant Profile
 * Button - CM Live Deal Image
-* Smart Search - CM Live Deal
+* Smart Search - CM Live Deal. See [Smart Search](/smart-search/).
 * Privacy - CM Live Deal
 * Task - CM Live Deal
 
