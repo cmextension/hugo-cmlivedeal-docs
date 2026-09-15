@@ -101,6 +101,8 @@ If you enable advance payment in [configuration](/configuration/advance-payment/
 *   **Modified by**: The person who last changed the deal.
 *   **ID**: The ID of the deal.
 
+If you added [custom fields](/custom-fields/) to deals, they are shown near the bottom of the form.
+
 ## Saving the deal
 
 If something in the form is wrong, the deal is not saved. The form opens again with everything you entered, and a message tells you what to fix. For example:
