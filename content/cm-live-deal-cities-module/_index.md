@@ -8,7 +8,7 @@ To configure the module, you go to System -> Site Modules
 
 ![/images/module_menu.png](/images/module_menu.png)
 
-Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see CM Live Deal - Cities module in your module list.
+Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see the `Cities - CM Live Deal` module in your module list.
 
 ![/images/module_list_city.png](/images/module_list_city.png)
 

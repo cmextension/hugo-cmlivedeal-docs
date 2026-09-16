@@ -4,8 +4,6 @@ weight: 50
 ---
 In your back-end, go to Components -> CM Live Deal -> Coupons to access the list of coupons.
 
-![/images/com_cmlivedeal_dashboard.png](/images/com_cmlivedeal_dashboard.png)
-
 You can edit an existing coupon be clicking on its code. You can also create a new coupon with your own custom coupon code and assign it to a specific user.
 
 ![/images/coupon_backend_list.png](/images/coupon_backend_list.png)

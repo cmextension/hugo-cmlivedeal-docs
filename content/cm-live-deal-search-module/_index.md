@@ -6,7 +6,7 @@ To configure your Search module, you go to System -> Site Modules (under Manage 
 
 ![/images/module_menu.png](/images/module_menu.png)
 
-Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see CM Live Deal - Search module in your module list.
+Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see the `Search - CM Live Deal` module in your module list.
 
 ![/images/module_list_search.png](/images/module_list_search.png)
 
@@ -40,7 +40,7 @@ After adjusting the settings, you can save the module and then you will receive 
 
 ![/images/mod_cmlivedeal_search_saved.png](/images/mod_cmlivedeal_search_saved.png)
 
-You can check on your front-end to see if the module is displayed properly. The below screenshot is how the inline search form is displayed in `sidebar-right` positon of Joomla!'s‘ default Cassiopeia template.
+You can check on your front-end to see if the module is displayed properly. The below screenshot is how the inline search form is displayed in the `sidebar-right` position of Joomla!'s default Cassiopeia template.
 
 ![/images/mod_cmlivedeal_search_frontend.png](/images/mod_cmlivedeal_search_frontend.png)
 
@@ -50,6 +50,6 @@ Example of how inline search form is displayed. The Clear button is displayed an
 
 ![/images/mod_cmlivedeal_search_inline.png](/images/mod_cmlivedeal_search_inline.png)
 
-Example of how vertical search form is displayed. The Clear button is displayed and is customized by `btn-light class of Boostrap 5. The Search button is customized by `btn-success` class of Bootstrap 5. Icon and text are both used in the buttons. The keyword field is customized by using `form-control-sm` class of Bootstrap 5.
+Example of how vertical search form is displayed. The Clear button is displayed and is customized by `btn-light` class of Bootstrap 5. The Search button is customized by `btn-success` class of Bootstrap 5. Icon and text are both used in the buttons. The keyword field is customized by using `form-control-sm` class of Bootstrap 5.
 
 ![/images/mod_cmlivedeal_search_vertical.png](/images/mod_cmlivedeal_search_vertical.png)

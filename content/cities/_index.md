@@ -16,7 +16,8 @@ The form to create new city (and to edit existing city) has the following fields
 *   **Name**: The name of the city.
 *   **Alias**: The Alias is generated automatically from title.
 *   **Radius**: The radius of the city in kilometres, measured from its location. Deals inside the circle belong to this city. After you enter a value, click somewhere else on the page to update the map.
-*   **Location**: Choose the location of the city on the map by dragging the marker. The circle on the map is centred on the marker, and its radius is the `Radius` value. Deals inside the circle belong to this city.
+*   **Location**: Choose the location of the city on the map by clicking where the city is, or by dragging the marker. Both work with Google Maps and with OpenStreetMap. The circle on the map is centred on the marker, and its radius is the `Radius` value. Deals inside the circle belong to this city.
+*   **Get coordinates from city name**: Looks the `Name` up and moves the marker there. The button **appears only when the component's `Map provider` option is Google Maps**, because the lookup is a Google service. With OpenStreetMap, place the marker by clicking on the map instead.
 *   **Latitude** and **Longitude**: Used to define the location. If you move the marker on **Location**, the latitude and longitude will be updated automatically, but if you enter your latitude and longitude, the map's marker will not moved.
 *   **Keywords**: An optional comma-separated list of keywords and/or phrases to be used in the HTML output, used for SEO
 *   **Meta description**: Meta description for SEO.
