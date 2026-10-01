@@ -2,7 +2,7 @@
 title: Installation
 weight: 10
 ---
-Before translating CM Live Deal to another language, you need to know install that new language.
+Before you use or translate CM Live Deal in another language, you need to install that language in Joomla!.
 
 In your Joomla! back-end, you go to System -> Languages (under Manage tab).
 
