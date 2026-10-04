@@ -82,6 +82,8 @@ The message closes by itself after the seconds set in **Close the customer scann
 
 Put instructions for customers in **Text above the customer QR code scanner** and **Text below the customer QR code scanner**. If the device has no working camera, the page tells the customer to ask the merchant to scan the coupon instead.
 
+**Use longer coupon codes with the customer scanner.** The customer scanner is a public page, so anyone who opens it can redeem a coupon if they know or guess its code. Short codes are easier to guess. Before you turn this scanner on, set **Coupon code length** in [the Coupon options](/configuration/coupon/) to 8 or more, with letters and digits. The new length applies to new coupons only.
+
 ## For developers
 
 Both scanners, and the Web Services API, trigger the `onCMLDBeforeRedeemCoupon` event before a coupon is redeemed or a redemption is cancelled. A plugin can stop the change, and the scanner shows the plugin's reason. See [Events](/developers/events/#oncmldbeforeredeemcoupon).
