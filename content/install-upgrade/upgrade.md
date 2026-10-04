@@ -38,6 +38,7 @@ See [Payment plugins](/configuration/payment-plugins/) for each setting.
 * **Currency code** is a new option. The upgrade takes the currency of an enabled payment plugin. If no payment plugin is enabled, it uses `USD`. If your prices are not in US dollars and you have no payment plugin enabled, set it by hand. See [Currency](/configuration/currency/).
 * If **Currency symbol** was empty, prices showed no symbol before. They now show the symbol of the currency code.
 * The price tag can no longer show the sale price. If your site used that, the upgrade switches the price tag to the saved percentage. See [Deal list](/configuration/deal-list/#if-you-upgrade-from-an-older-version).
+* Only users with the **Configure ACL & Options** permission for CM Live Deal can open [Tools](/tools/) now. Before, any administrator user who could create deals could use them, for example the Manager group. Super Users are not affected.
 * Plugins you already have keep their state, enabled or disabled. Only the plugins that are new in 4.0 are enabled on install. See [Install](/install-upgrade/install/).
 
 ### Your data
