@@ -152,6 +152,7 @@ Every event below is available since CM Live Deal 4.0.0, except the four payment
 | `onCMLDAfterCreateOrder` | After a new order has been saved | Read only |
 | `onCMLDAfterChangeOrderStatus` | After the status of an order changed | Read only |
 | `onCMLDAfterOrderPaid` | After an order was paid and its coupon exists | Read only |
+| `onCMLDGetCheckoutReturnUrl` | When the customer lands on the site at the end of a checkout | Send the customer to another URL |
 | `onCMLDGetPaymentIdentity` | When CM Live Deal asks which gateways exist | Offer your own gateway |
 | `onCMLDGetPaymentForm` | When the customer has to pay | Render your payment form |
 | `onCMLDValidateCallback` | When the customer comes back from the gateway | Say whether the payment is good |
@@ -424,6 +425,51 @@ public function sendToAccounting(AfterOrderPaidEvent $event): void
         'transaction_id' => $event->getTransactionId(),
         'coupon'         => $event->getCoupon()->code,
     ]);
+}
+```
+
+## Checkout events
+
+### onCMLDGetCheckoutReturnUrl
+
+Runs when the customer lands on the site at the end of a checkout, before the page is shown. If you set a URL, CM Live Deal sends the customer there instead of showing the page. Use it, for example, to send the customer back to your mobile app after they paid in the browser.
+
+**Methods:** `getOutcome()`, `getCouponCode()`, `getUserId()`, `getUrl()`, `setUrl($url)`.
+
+**Since:** 4.0.0
+
+**Context:** `com_cmlivedeal.checkout`
+
+`getOutcome()` tells you how the checkout ended:
+
+* `coupon`: the customer took a free deal and is about to see the new coupon. `getCouponCode()` gives you its code.
+* `success`: the customer paid for a deal and came back from the gateway. The coupon is created when the gateway confirms the payment, and the customer gets it by email. Use `onCMLDAfterOrderPaid` if you need the coupon.
+* `cancel`: the customer cancelled the payment, or the payment failed.
+
+`getCouponCode()` is empty for `success` and `cancel`.
+
+The event runs on the pages that every payment gateway ends on, so it works for PayPal, Stripe and your own gateway plugin without any change to them. If no plugin sets a URL, the customer sees the normal page.
+
+The URL can use your app's own scheme, like `myapp://`. CM Live Deal never takes this URL from the request, only from your plugin, so nobody can use it to send your customers to another site. Build the URL yourself and do not copy anything from the request into it.
+
+When you send the customer away after `coupon`, CM Live Deal forgets the coupon it was about to show, so it does not pop up the next time the customer opens their coupons.
+
+This example sends customers who came from your app back to it. Your app sets a cookie when it opens the checkout:
+
+```php
+public function backToApp(GetCheckoutReturnUrlEvent $event): void
+{
+    if ($this->getApplication()->getInput()->cookie->get('myapp', '', 'cmd') !== '1') {
+        return;
+    }
+
+    $url = 'myapp://checkout/' . $event->getOutcome();
+
+    if ($event->getCouponCode() !== '') {
+        $url .= '?code=' . rawurlencode($event->getCouponCode());
+    }
+
+    $event->setUrl($url);
 }
 ```
 
