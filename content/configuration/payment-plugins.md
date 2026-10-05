@@ -35,6 +35,8 @@ These options are the same for both integrations:
 * **Live Webhook ID** and **Sandbox Webhook ID**: The ID PayPal gives to the webhook you add to the REST app. It starts with `WH-` or is a long hexadecimal string. Without it, notifications cannot be verified as coming from PayPal and are rejected, so an order is only completed if the customer's browser returns to your site.
 * **Webhook Endpoint**: In your REST app, add a webhook at `<your site>/index.php?option=com_cmlivedeal&task=checkout.webhook&gateway=paypal` and subscribe it to the events `Checkout order approved` and `Payment capture completed`. This completes the order even if the customer closes the browser before returning to your site.
 
+Customers who pay inside a mobile app, through the CM Live Deal App add-on, also use the REST API. The app opens PayPal's page, where the customer approves the payment, and PayPal then sends them back to the app. Payments Standard cannot do this, so with Payments Standard the app sends the customer to your website's checkout.
+
 ### PayPal Payments Standard (legacy)
 
 ![/images/payment-plugin-4-0-paypal-standard.png](/images/payment-plugin-4-0-paypal-standard.png)
@@ -63,8 +65,9 @@ At checkout, the customer is taken to Stripe's payment page and comes back to yo
 * **Mode**: `Live` to accept real payments, `Test` to test with Stripe's test mode.
 * **Live Mode Secret Key**: Your Stripe secret key for `Live` mode.
 * **Test Mode Secret Key**: Your Stripe secret key for `Test` mode.
+* **Live Mode Publishable Key** and **Test Mode Publishable Key**: Only needed when customers pay inside a mobile app with Stripe's payment sheet, through the CM Live Deal App add-on. The checkout on your website does not use them. They start with `pk_live_` and `pk_test_`.
 * **Live Mode Webhook Signing Secret** and **Test Mode Webhook Signing Secret**: The signing secret Stripe shows when you add the webhook endpoint below. It starts with `whsec_`. Without it, notifications cannot be verified as coming from Stripe and are rejected, so an order is only completed if the customer's browser returns to your site.
-* **Webhook Endpoint**: In the Stripe Dashboard, add a webhook endpoint at `<your site>/index.php?option=com_cmlivedeal&task=checkout.webhook&gateway=stripe` and subscribe it to the events `checkout.session.completed` and `checkout.session.async_payment_succeeded`. This completes the order even if the customer closes the browser before returning to your site.
+* **Webhook Endpoint**: In the Stripe Dashboard, add a webhook endpoint at `<your site>/index.php?option=com_cmlivedeal&task=checkout.webhook&gateway=stripe` and subscribe it to the events `checkout.session.completed` and `checkout.session.async_payment_succeeded`. If customers pay inside a mobile app, also subscribe it to `payment_intent.succeeded`. This completes the order even if the customer closes the browser or the app before returning to your site.
 
 Some payment methods, such as bank debits, are not paid at once. Stripe sends `checkout.session.async_payment_succeeded` when the money arrives, and the order is completed then. This also needs the webhook.
 

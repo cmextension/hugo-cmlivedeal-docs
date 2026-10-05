@@ -93,8 +93,49 @@ foreach ($model->getItems() as $coupon) {
 
 `filter.search` finds coupons by their code or by the title of their deal. You can sort by `a.created`, `a.code` or `a.redeemed_time`.
 
+## Place an order and take the payment yourself
+
+Code that has its own payment screen, such as a mobile app, places the order through the same rules as the checkout page and then asks the order's gateway to start the payment. Since 4.0.0.
+
+```php
+use CMExtension\Component\CMLiveDeal\Administrator\Exception\CheckoutException;
+
+$checkout = $factory->createModel('Checkout', 'Site', ['ignore_request' => true]);
+$orders   = $factory->createModel('Order', 'Site', ['ignore_request' => true]);
+$checkout->setCurrentUser($user);
+$orders->setCurrentUser($user);
+
+try {
+    // The same fields as the checkout form. The amount, status and owner are set by CM Live Deal.
+    $order = $checkout->placeOrder($dealId, [
+        'first_name'     => 'Linh',
+        'last_name'      => 'Nguyen',
+        'email'          => 'linh@example.com',
+        'payment_method' => 'stripe',
+    ]);
+} catch (CheckoutException $e) {
+    // getReason() is not_found, login_required, already_captured, sold_out, no_form,
+    // invalid or refused. getMessage() is a translated message for the customer.
+    echo $e->getReason() . ': ' . $e->getMessage();
+
+    return;
+}
+
+$session = $orders->createPaymentSession($order['id'], $returnUrl, $cancelUrl);
+
+if ($session === null) {
+    // This gateway cannot take a payment outside the checkout page.
+}
+
+// Later, when your payment screen says the customer has paid:
+$coupon = $orders->confirmPaymentSession($order['id']);
+```
+
+`confirmPaymentSession()` asks the gateway, never your code, whether the payment went through. It gives back the coupon once the order is paid, or `null`. It is safe to call it again. To know which gateways can do this, read `CMLiveDealHelper::getPaymentMethods()`: those that can have `'sessions' => true`. See [onCMLDCreatePaymentSession](../events/#oncmldcreatepaymentsession) for how a gateway answers.
+
 ## Tips
 
 * Always use `ignore_request`. Without it, the model reads the filters of the visitor who is on the site, which is not what you want in an API or a console command.
 * Never give a customer id from the request to the `Coupons` model. Take the user from the session or the API token, so a customer can only see their own coupons.
 * The deal list uses the access levels of the user the application knows. In a Web Services request, that is the user of the API token.
+* Never take the order amount or the order's owner from the request. `placeOrder()` sets them itself.

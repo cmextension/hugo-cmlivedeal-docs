@@ -157,6 +157,8 @@ Every event below is available since CM Live Deal 4.0.0, except the four payment
 | `onCMLDGetPaymentForm` | When the customer has to pay | Render your payment form |
 | `onCMLDValidateCallback` | When the customer comes back from the gateway | Say whether the payment is good |
 | `onCMLDProcessWebhook` | When the gateway calls the site directly | Handle the notification |
+| `onCMLDCreatePaymentSession` | When an app or other code wants to take the payment without the checkout page | Start the payment |
+| `onCMLDConfirmPaymentSession` | When that caller says the customer has paid | Check the payment with your gateway |
 
 All event classes are in the namespace `CMExtension\Component\CMLiveDeal\Administrator\Event`.
 
@@ -475,7 +477,7 @@ public function backToApp(GetCheckoutReturnUrlEvent $event): void
 
 ## Payment events
 
-These four events are how the PayPal and Stripe plugins are built, and you can write a plugin for another gateway the same way. The easiest start is to copy `plugins/cmlivedeal/stripe` and extend `CMLiveDealPaymentPlugin`, which subscribes to all four for you.
+These events are how the PayPal and Stripe plugins are built, and you can write a plugin for another gateway the same way. The easiest start is to copy `plugins/cmlivedeal/stripe` and extend `CMLiveDealPaymentPlugin`, which subscribes to all of them for you. The last two are optional: a gateway that does not answer them simply works through the checkout page, as before.
 
 One rule to know: CM Live Deal reads the gateway id out of the URL with Joomla's `word` filter, which keeps only letters. Give your gateway an id with no digits in it, or the customer's return from the gateway will not be recognised.
 
@@ -518,6 +520,81 @@ Runs when the gateway calls the site directly, without a browser. Your plugin de
 **Since:** 4.0.0
 
 The result needs `handled`, `gateway_id`, `complete_order`, `order_id`, `transaction_id` and `status`.
+
+### onCMLDCreatePaymentSession
+
+Runs when code other than the checkout page, such as a mobile app, wants to take the payment for an unpaid order itself. Only the gateway the order was placed with should answer. Give back what the caller needs to show its own payment screen. Give back nothing if your gateway cannot take a payment this way; the caller then sends the customer to the checkout page.
+
+**Methods:** `getOrder()`, `getItemName()`, `getReturnUrl()`, `getCancelUrl()`, `setSession(array $session)`.
+
+**Since:** 4.0.0
+
+The session needs at least `gateway` and `type`. Everything else depends on your gateway. Stripe, for example, gives back `client_secret` and `publishable_key` for Stripe's payment sheet, and PayPal gives back `approve_url`, the PayPal page where the customer approves the payment. The return and cancel URLs are only for a gateway that needs a page of its own, like PayPal. Store your gateway's reference in the order's `transaction_id`, as you do for the checkout page, so the confirm event can find the payment again.
+
+To show the caller that your gateway supports this, return `true` from `supportsPaymentSessions()`. The payment method then has `'sessions' => true` in `onCMLDGetPaymentIdentity`.
+
+### onCMLDConfirmPaymentSession
+
+Runs when the caller of `onCMLDCreatePaymentSession` says the customer has paid. Never trust the caller. Ask your gateway whether the payment went through, and check the amount, the currency and the order number against the order row. CM Live Deal completes the order only when you answer `true`, and only once.
+
+**Methods:** `getOrder()`, `setResult($valid, $transactionId = '', $reason = '')`.
+
+**Since:** 4.0.0
+
+The gateways' webhooks still complete the order too, so a customer who closes the app right after paying does not lose the order.
+
+A gateway that answers both events:
+
+```php
+use CMExtension\Component\CMLiveDeal\Administrator\Event\ConfirmPaymentSessionEvent;
+use CMExtension\Component\CMLiveDeal\Administrator\Event\CreatePaymentSessionEvent;
+
+public function supportsPaymentSessions(): bool
+{
+    return $this->params->get('api_key', '') !== '';
+}
+
+public function onCMLDCreatePaymentSession(CreatePaymentSessionEvent $event): void
+{
+    $order = $event->getOrder();
+
+    if (!$this->isOwnOrder($order) || !$this->supportsPaymentSessions()) {
+        return;
+    }
+
+    // Ask your gateway for a payment of $order->amount, with the order number attached.
+    $payment = $this->gateway()->createPayment($order->amount, (string) $order->order_number);
+
+    $this->storeTransactionId((int) $order->id, $payment->id);
+
+    $event->setSession([
+        'gateway' => $this->gatewayId,
+        'type'    => 'mygateway_sheet',
+        'token'   => $payment->clientToken,
+    ]);
+}
+
+public function onCMLDConfirmPaymentSession(ConfirmPaymentSessionEvent $event): void
+{
+    $order = $event->getOrder();
+
+    if (!$this->isOwnOrder($order)) {
+        return;
+    }
+
+    $payment = $this->gateway()->getPayment((string) $order->transaction_id);
+
+    if ($payment->status !== 'paid' || (float) $payment->amount !== (float) $order->amount) {
+        $event->setResult(false, '', 'Not paid in full');
+
+        return;
+    }
+
+    $event->setResult(true, $payment->id);
+}
+```
+
+`isOwnOrder()` comes from `CMLiveDealPaymentPlugin`. `gateway()` and `storeTransactionId()` stand for your own code.
 
 ## Tips
 
