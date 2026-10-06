@@ -27,6 +27,8 @@ Then go to `Components > CM Live Deal App API > Dashboard` and look at the **Set
 
 The **Setup** card lists what the app still needs. When everything is done, it says *Everything is set up for the app*.
 
+![/images/app-4-0-setup.png](/images/app-4-0-setup.png)
+
 * **Customers may sign in to the app.** Joomla only lets a group sign in to its API when the group has the **Web Services Login** permission. Go to `System > Global Configuration > Permissions`, select the group new accounts join (usually **Registered**), and set **Web Services Login** to **Allowed**.
 * **The app's routes are enabled.** The plugin **Web Services - CM Live Deal App API** must be enabled.
 * **The app's sign-in plugin is enabled.** The plugin **API Authentication - CM Live Deal App API** must be enabled.
@@ -41,11 +43,15 @@ Go to `Components > CM Live Deal App API > Options`.
 
 ### App
 
+![/images/app-4-0-options-app.png](/images/app-4-0-options-app.png)
+
 * **Browse Without Signing In**: Let the app show deals, cities and categories before the customer signs in. Switch it off to show deals to signed-in customers only. Default: on.
 * **App Link Scheme**: The scheme of the links that bring the customer back to the app, for example `cmlivedeal` in `cmlivedeal://payment/success`. Letters only. It must match your app. Default: `cmlivedeal`.
 * **Checkout Link Lifetime (seconds)**: How long the link that opens the website checkout works, from 10 to 600 seconds. The app opens it at once, and it works only once. Default: 60.
 
 ### Sign-in
+
+![/images/app-4-0-options-signin.png](/images/app-4-0-options-signin.png)
 
 * **Failed Sign-ins per Account**: How many wrong passwords one username may have before it has to wait. Default: 5.
 * **Failed Sign-ins per IP Address**: The same for one IP address. Keep it well above the per-account limit, because many customers can share one address on a mobile network. Default: 20.
@@ -82,6 +88,8 @@ Free deals need no payment. The app takes the coupon through CM Live Deal's own 
 
 `Components > CM Live Deal App API > Dashboard` shows how your customers use the app. Choose the last 7, 30 or 90 days at the top.
 
+![/images/app-4-0-dashboard.png](/images/app-4-0-dashboard.png)
+
 * **Active today**, **Active in 7 days**, **Active in 30 days**: how many different customers used the app.
 * **Active devices**: devices still signed in that were used in the last 30 days.
 * **Sign-ins** and **Failed sign-ins**: in the days you chose.
@@ -93,6 +101,8 @@ A coupon counts as the app's when it was taken in the app, or when its order was
 ## Devices
 
 `Components > CM Live Deal App API > Devices` lists every device that signed in: the customer, the device name and platform, the app version, when it signed in and when it was last used.
+
+![/images/app-4-0-devices.png](/images/app-4-0-devices.png)
 
 To sign a device out, select it and click **Sign Out**. The app on that device is signed out at its next request. Do this when a customer loses their phone.
 
