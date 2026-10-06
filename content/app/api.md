@@ -139,6 +139,23 @@ curl https://example.com/api/index.php/v1/cmlivedealapp/me/payment-methods \
 
 `native: true` means the app can take the payment itself. For a method with `native: false`, use [the website checkout](#pay-on-the-website).
 
+`meta.billing_fields` lists the checkout fields this site asks for, in the website's order and language. Build the billing form from it, so the customer fills in every required field at once:
+
+```json
+"meta": {"billing_fields": [
+  {"name": "first_name", "label": "First Name", "type": "text", "required": true},
+  {"name": "last_name", "label": "Last Name", "type": "text", "required": true},
+  {"name": "email", "label": "Email", "type": "email", "required": true},
+  {"name": "city", "label": "City", "type": "text", "required": true},
+  {"name": "country", "label": "Country", "type": "list", "required": true,
+   "options": [{"value": "united_states", "label": "United States"}, …]},
+  {"name": "tos", "label": "I agree to the terms of service", "type": "checkbox", "required": true,
+   "url": "https://example.com/terms-of-service"}
+]}
+```
+
+`type` is `text`, `email`, `list` (send one of the `options` values) or `checkbox` (send `true`). `url` is the Terms of Service page, or `null` when the site has none. A field that is not in the list is not used by this site.
+
 ### 1. Place the order
 
 ```bash
@@ -147,7 +164,7 @@ curl -X POST https://example.com/api/index.php/v1/cmlivedealapp/me/payments \
   -d '{"deal_id":7,"payment_method":"stripe","first_name":"Linh","last_name":"Nguyen","email":"linh@example.com","tos":true}'
 ```
 
-Send the billing fields the site's checkout form asks for: `first_name`, `last_name` and `email`, and, when the site asks for them, `address_1`, `address_2`, `address_3`, `postal_box`, `city`, `state`, `postal_code`, `country` and `tos` (the Terms of Service tick). The site sets the amount itself. The answer is `201`:
+Send the fields from `meta.billing_fields` above. The possible fields are `first_name`, `last_name`, `email`, `address_1`, `address_2`, `address_3`, `postal_box`, `city`, `state`, `postal_code`, `country` and `tos` (the Terms of Service tick). The site sets the amount itself. The answer is `201`:
 
 ```json
 {"data": {"type": "payments", "id": "422", "attributes": {
