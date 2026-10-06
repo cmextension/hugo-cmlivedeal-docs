@@ -171,13 +171,26 @@ Send the fields from `meta.billing_fields` above. The possible fields are `first
   "id": 422, "number": 207, "deal_id": 7, "status": "unpaid",
   "amount": 4.5, "amount_formatted": "$4.50", "payment_method": "stripe", "coupon_id": null,
   "session": {"gateway": "stripe", "type": "stripe_payment_sheet", "payment_intent": "pi_…",
-              "client_secret": "pi_…_secret_…", "publishable_key": "pk_live_…", "amount": 450, "currency": "usd"}
+              "client_secret": "pi_…_secret_…", "publishable_key": "pk_live_…", "amount": 450, "currency": "usd",
+              "wallets": true, "merchant_country": "US"}
 }}}
 ```
 
 ### 2. Take the payment
 
-* `stripe_payment_sheet`: give `publishable_key` and `client_secret` to Stripe's payment sheet (`@stripe/stripe-react-native`).
+* `stripe_payment_sheet`: give `publishable_key` and `client_secret` to Stripe's payment sheet (`@stripe/stripe-react-native`). When `wallets` is `true`, also pass `merchant_country` to the sheet's `googlePay` (Android) and `applePay` (iOS) options; it is the country of the site's Stripe account. When `wallets` is `false`, offer cards only.
+
+```ts
+await initPaymentSheet({
+  paymentIntentClientSecret: session.client_secret,
+  merchantDisplayName: 'Bistro Verde',
+  googlePay: session.wallets
+    ? { merchantCountryCode: session.merchant_country, currencyCode: session.currency.toUpperCase(), testEnv: session.publishable_key.startsWith('pk_test_') }
+    : undefined,
+});
+```
+
+  Google Pay also needs `enableGooglePay: true` in the `@stripe/stripe-react-native` config plugin; Apple Pay needs your Apple merchant ID there.
 * `paypal_approval`: the session has `approve_url`. Open it in an in-app browser tab. After the customer approves or cancels, PayPal returns to the site, which opens `<scheme>://payment/success?order=422` or `<scheme>://payment/cancel?order=422` in the app.
 
 ### 3. Confirm

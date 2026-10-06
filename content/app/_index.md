@@ -76,7 +76,7 @@ Registration, password reset and two-factor setup happen on the website. The app
 
 When advance payment is on (see [Advance payment](/coupons/advance-payment/)), the customer pays for a deal before they get the coupon.
 
-* **Stripe** is paid inside the app with Stripe's payment sheet (cards, Google Pay). Add the **Publishable Key** for your mode in the Stripe plugin, and subscribe your Stripe webhook to `payment_intent.succeeded` as well. See [Payment plugins](/configuration/payment-plugins/#stripe).
+* **Stripe** is paid inside the app with Stripe's payment sheet (cards, and Google Pay when **Google Pay and Apple Pay** is on in the plugin's **Mobile App** tab). Add the **Publishable Key** for your mode in the Stripe plugin, and subscribe your Stripe webhook to `payment_intent.succeeded` as well. See [Payment plugins](/configuration/payment-plugins/#stripe).
 * **PayPal with the REST API** opens PayPal's own page inside the app. The customer approves the payment there, and PayPal sends them back to the app.
 * **PayPal Payments Standard and other payment plugins** cannot take a payment inside the app. For these, the app opens your website's checkout. The customer is signed in there automatically, with a link that works once and only for the **Checkout Link Lifetime**.
 

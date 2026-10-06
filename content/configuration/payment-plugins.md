@@ -69,6 +69,13 @@ At checkout, the customer is taken to Stripe's payment page and comes back to yo
 * **Live Mode Webhook Signing Secret** and **Test Mode Webhook Signing Secret**: The signing secret Stripe shows when you add the webhook endpoint below. It starts with `whsec_`. Without it, notifications cannot be verified as coming from Stripe and are rejected, so an order is only completed if the customer's browser returns to your site.
 * **Webhook Endpoint**: In the Stripe Dashboard, add a webhook endpoint at `<your site>/index.php?option=com_cmlivedeal&task=checkout.webhook&gateway=stripe` and subscribe it to the events `checkout.session.completed` and `checkout.session.async_payment_succeeded`. If customers pay inside a mobile app, also subscribe it to `payment_intent.succeeded`. This completes the order even if the customer closes the browser or the app before returning to your site.
 
+### Mobile App
+
+The options on the **Mobile App** tab are only used by the mobile app (the CM Live Deal App add-on). The checkout on your website does not use them.
+
+* **Google Pay and Apple Pay**: `Yes` offers Google Pay and Apple Pay in Stripe's payment sheet when the customer's phone has them. Turn them on in the Stripe Dashboard too, under **Settings > Payment methods**. Apple Pay also needs an app built with an Apple merchant ID.
+* **Stripe Account Country**: The two-letter code of the country your Stripe account is registered in, for example `US` or `DE`. Google Pay and Apple Pay need it. Leave it blank and the plugin asks Stripe, then remembers the answer for a day. Fill it in only if your secret key is a restricted key that cannot read your account.
+
 Some payment methods, such as bank debits, are not paid at once. Stripe sends `checkout.session.async_payment_succeeded` when the money arrives, and the order is completed then. This also needs the webhook.
 
 ## Logs
