@@ -148,13 +148,13 @@ curl https://example.com/api/index.php/v1/cmlivedealapp/me/payment-methods \
   {"name": "email", "label": "Email", "type": "email", "required": true},
   {"name": "city", "label": "City", "type": "text", "required": true},
   {"name": "country", "label": "Country", "type": "list", "required": true,
-   "options": [{"value": "united_states", "label": "United States"}, …]},
+   "options": [{"value": "united_states", "label": "United States", "code": "US"}, …]},
   {"name": "tos", "label": "I agree to the terms of service", "type": "checkbox", "required": true,
    "url": "https://example.com/terms-of-service"}
 ]}
 ```
 
-`type` is `text`, `email`, `list` (send one of the `options` values) or `checkbox` (send `true`). `url` is the Terms of Service page, or `null` when the site has none. A field that is not in the list is not used by this site.
+`type` is `text`, `email`, `list` (send one of the `options` values) or `checkbox` (send `true`). Each country option also has `code`, its two-letter ISO 3166-1 code, for a payment form that needs it, such as Stripe's payment sheet. Always send the `value`, not the `code`. `url` is the Terms of Service page, or `null` when the site has none. A field that is not in the list is not used by this site.
 
 ### 1. Place the order
 
