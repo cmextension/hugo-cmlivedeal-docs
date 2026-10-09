@@ -32,6 +32,7 @@ The **Setup** card lists what the app still needs. When everything is done, it s
 * **Customers may sign in to the app.** Joomla only lets a group sign in to its API when the group has the **Web Services Login** permission. Go to `System > Global Configuration > Permissions`, select the group new accounts join (usually **Registered**), and set **Web Services Login** to **Allowed**.
 * **The app's routes are enabled.** The plugin **Web Services - CM Live Deal App API** must be enabled.
 * **The app's sign-in plugin is enabled.** The plugin **API Authentication - CM Live Deal App API** must be enabled.
+* **Free coupons can be taken in the app.** The app takes free coupons through CM Live Deal's own API, so the plugin **Web Services - CM Live Deal** must be enabled. It is disabled when CM Live Deal is installed.
 
 You do not need Joomla's own API tokens for the app. The app signs in with the customer's username and password and gets its own token.
 
