@@ -8,23 +8,23 @@ The plugin is enabled when you install CM Live Deal. If you turn it off, later u
 
 Make sure Joomla allows user registration. Go to `Users` -> `Manage`, then click the `Options` button on the toolbar.
 
-![/images/plg_user_option.png](/images/plg_user_option.png)
+![/images/plg_user_option.webp](/images/plg_user_option.webp)
 
 Set `Allow User Registration` to `Yes`.
 
-![/images/plg_user_option_allow_user_registration.png](/images/plg_user_option_allow_user_registration.png)
+![/images/plg_user_option_allow_user_registration.webp](/images/plg_user_option_allow_user_registration.webp)
 
 Click `Save`. You see the message `Configuration saved`.
 
-![/images/plg_user_option_allow_user_registration_saved.png](/images/plg_user_option_allow_user_registration_saved.png)
+![/images/plg_user_option_allow_user_registration_saved.webp](/images/plg_user_option_allow_user_registration_saved.webp)
 
 To configure the plugin, go to `System` -> `Manage` -> `Plugins`.
 
-![/images/plg_user_cmldmerchant_menu.png](/images/plg_user_cmldmerchant_menu.png)
+![/images/plg_user_cmldmerchant_menu.webp](/images/plg_user_cmldmerchant_menu.webp)
 
 Search for `CM Live Deal`. Click `User - CM Live Deal's Merchant Profile` to edit its settings.
 
-![/images/merchant-plugin-4-0-options.png](/images/merchant-plugin-4-0-options.png)
+![/images/merchant-plugin-4-0-options.webp](/images/merchant-plugin-4-0-options.webp)
 
 *   **Registration page**: The menu item of the merchant registration page that you created before. The merchant profile fields are only shown on this page.
 
@@ -47,8 +47,8 @@ Some profile fields have a setting with 3 values:
 
 After saving the plugin, you see the message `Plugin saved`.
 
-![/images/plg_user_cmldmerchant_saved.png](/images/plg_user_cmldmerchant_saved.png)
+![/images/plg_user_cmldmerchant_saved.webp](/images/plg_user_cmldmerchant_saved.webp)
 
 Visit the merchant registration page on your site to check that the merchant profile fields are shown there. The page could look like the following screenshot.
 
-![/images/plg_user_cmldmerchant_frontend.png](/images/plg_user_cmldmerchant_frontend.png)
+![/images/plg_user_cmldmerchant_frontend.webp](/images/plg_user_cmldmerchant_frontend.webp)

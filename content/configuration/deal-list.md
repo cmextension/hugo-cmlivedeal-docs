@@ -2,7 +2,7 @@
 title: Deal list
 weight: 50
 ---
-![/images/options-4-0-deal-list.png](/images/options-4-0-deal-list.png)
+![/images/options-4-0-deal-list.webp](/images/options-4-0-deal-list.webp)
 
 *   **Deal list columns**: The most columns the deal list shows. When the space is narrow, for example on a phone or in a narrow content area, the list shows fewer columns so the cards do not get too small:
     *   2 or more columns need at least 560px.

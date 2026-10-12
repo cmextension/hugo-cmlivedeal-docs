@@ -8,23 +8,23 @@ If you use this module you need to create a hidden menu item for `Merchant` page
 
 To configure the module, you go to System -> Site Modules (under Manage tab)
 
-![/images/module_menu_site_modules.png](/images/module_menu_site_modules.png)
+![/images/module_menu_site_modules.webp](/images/module_menu_site_modules.webp)
 
 Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see the `Merchants - CM Live Deal` module in your module list.
 
-![/images/module_list_merchant.png](/images/module_list_merchant.png)
+![/images/module_list_merchant.webp](/images/module_list_merchant.webp)
 
 Click on the module name to edit its settings. You can give the module a new name by modifying `Title` field. In the `Module` tab, you set `Status` to `Published` and select the position you want to put this module in `Position` option.
 
-![/images/mod_cmlivedeal_merchants_tab_module.png](/images/mod_cmlivedeal_merchants_tab_module.png)
+![/images/mod_cmlivedeal_merchants_tab_module.webp](/images/mod_cmlivedeal_merchants_tab_module.webp)
 
 In `Menu Assignment` tab, you configure what pages the module is displayed on.
 
-![/images/mod_cmlivedeal_merchants_menu_assignment.png](/images/mod_cmlivedeal_merchants_menu_assignment.png)
+![/images/mod_cmlivedeal_merchants_menu_assignment.webp](/images/mod_cmlivedeal_merchants_menu_assignment.webp)
 
 In `Options` tab, you can configure the main settings of the module.
 
-![/images/mod_cmlivedeal_merchants_tab_options.png](/images/mod_cmlivedeal_merchants_tab_options.png)
+![/images/mod_cmlivedeal_merchants_tab_options.webp](/images/mod_cmlivedeal_merchants_tab_options.webp)
 
 *   **Merchants**: The merchants to show in the module. To add a merchant, click the person icon and choose a merchant in the popup, then click the plus icon to add them to the list.
 *   **Show number of deals**: Show the number of deals next to each merchant.
@@ -41,8 +41,8 @@ For example, you can use the CSS classes from Bootstrap 5 like the screenshot ab
 
 After adjusting the settings, you can save the module and then you will receive `Module saved` message. If you change the module's name, you can see its name is updated in the module list.
 
-![/images/mod_cmlivedeal_merchants_saved.png](/images/mod_cmlivedeal_merchants_saved.png)
+![/images/mod_cmlivedeal_merchants_saved.webp](/images/mod_cmlivedeal_merchants_saved.webp)
 
 You can check on your front-end to see if the module is displayed properly.
 
-![/images/mod_cmlivedeal_merchants_frontend.png](/images/mod_cmlivedeal_merchants_frontend.png)
+![/images/mod_cmlivedeal_merchants_frontend.webp](/images/mod_cmlivedeal_merchants_frontend.webp)

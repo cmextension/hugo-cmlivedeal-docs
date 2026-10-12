@@ -7,11 +7,11 @@ When you enable advance payment in [the component's options](/configuration/adva
 
 The amount to pay is shown in the deal list
 
-![/images/advance_payment_deal_list.png](/images/advance_payment_deal_list.png)
+![/images/advance_payment_deal_list.webp](/images/advance_payment_deal_list.webp)
 
 and on the deal page.
 
-![/images/advance_payment_deal_detail.png](/images/advance_payment_deal_detail.png)
+![/images/advance_payment_deal_detail.webp](/images/advance_payment_deal_detail.webp)
 
 To receive payments, you need to [set up and enable a payment plugin](/configuration/payment-plugins/).
 
@@ -21,7 +21,7 @@ At checkout, the customer fills in the billing details, chooses a payment method
 
 The payment method is required. If only one payment plugin is enabled, it is selected for the customer. You can also hide the choice then, with **Hide a single payment method** in the options.
 
-![/images/advance_payment_checkout.png](/images/advance_payment_checkout.png)
+![/images/advance_payment_checkout.webp](/images/advance_payment_checkout.webp)
 
 What happens next depends on the payment method:
 

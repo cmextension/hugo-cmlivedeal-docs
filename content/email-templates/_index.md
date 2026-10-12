@@ -5,7 +5,7 @@ weight: 45
 
 CM Live Deal sends three emails that you can write yourself. Go to `Components > CM Live Deal > Email Templates`.
 
-![/images/email-templates-4-0-list.png](/images/email-templates-4-0-list.png)
+![/images/email-templates-4-0-list.webp](/images/email-templates-4-0-list.webp)
 
 | Template | Sent to | When |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ The two reminder templates are sent only when you have created the Expiry remind
 
 Click the subject of a template.
 
-![/images/email-templates-4-0-edit.png](/images/email-templates-4-0-edit.png)
+![/images/email-templates-4-0-edit.webp](/images/email-templates-4-0-edit.webp)
 
 * **Email Subject**: the subject line.
 * **Email Body**: the email itself. It is sent as HTML, so you can use bold text, links and lists.

@@ -8,8 +8,8 @@ If merchant renews his/her membership, the data in CMLiveDeal profile will not b
 
 To setup profile in Membership Pro component, in Custom Fields section, you edit/create your fields. The first column `Name` contains the required information you need to put into CMLiveDeal's configuration.
 
-![/images/com_osmembership_field_list.jpg](/images/com_osmembership_field_list.jpg)
+![/images/com_osmembership_field_list.webp](/images/com_osmembership_field_list.webp)
 
-Go to `Merchant` tab in CMLiveDeal's configuration, set `Use subscriber's profile as merchant's profile` to `Enabled`, enter the field name you have in the column `Name` in Membership Pro's Custom Fields section into the fields at the bottom of the page.
+Go to `Merchant` tab in CMLiveDeal's configuration, set `Get merchant profile from another source` to `Get from the integrated membership component`, enter the field name you have in the column `Name` in Membership Pro's Custom Fields section into the fields at the bottom of the page.
 
-![/images/com_cmlivedeal_membership_profile.jpg](/images/com_cmlivedeal_membership_profile.jpg)
+![/images/com_cmlivedeal_membership_profile.webp](/images/com_cmlivedeal_membership_profile.webp)

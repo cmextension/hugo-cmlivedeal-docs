@@ -13,11 +13,11 @@ We strongly recommend that you back up your site before you install any new exte
 3. Open the `Upload Package File` tab.
 4. Drag the CM Live Deal package file (`pkg_cmlivedeal_4.0.0.zip`) into the box, or click `Or browse for file` and choose it.
 
-![/images/install-4-0-upload.png](/images/install-4-0-upload.png)
+![/images/install-4-0-upload.webp](/images/install-4-0-upload.webp)
 
 Joomla! installs the package as soon as you choose the file. When it is done, you see the message `Installation of the package was successful.`
 
-![/images/install-4-0-success.png](/images/install-4-0-success.png)
+![/images/install-4-0-success.webp](/images/install-4-0-success.webp)
 
 ## What the package does for you
 

@@ -3,7 +3,7 @@ title: Deal
 weight: 80
 ---
 
-![/images/options-4-0-deal.png](/images/options-4-0-deal.png)
+![/images/options-4-0-deal.webp](/images/options-4-0-deal.webp)
 
 *   **Deal detail**: How deal details are shown.
     *   As a popup in the deal list: When you click a deal in the deal list, a popup opens with the deal's details. You can close the popup and view another deal without leaving the list.

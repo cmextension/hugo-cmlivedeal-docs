@@ -9,7 +9,7 @@ CM Live Deal comes with two payment plugins: **PayPal - CM Live Deal** and **Str
 
 To find the plugins, go to `System` → `Plugins` and filter by the type `cmlivedeal`.
 
-![/images/payment-plugins-4-0-list.png](/images/payment-plugins-4-0-list.png)
+![/images/payment-plugins-4-0-list.webp](/images/payment-plugins-4-0-list.webp)
 
 Enable only the plugins you have set up. At checkout, customers choose from the enabled plugins. If only one plugin is enabled, it is selected for them.
 
@@ -29,7 +29,7 @@ These options are the same for both integrations:
 
 ### REST API
 
-![/images/payment-plugin-4-0-paypal-rest.png](/images/payment-plugin-4-0-paypal-rest.png)
+![/images/payment-plugin-4-0-paypal-rest.webp](/images/payment-plugin-4-0-paypal-rest.webp)
 
 * **Live Client ID** and **Live Secret Key**, **Sandbox Client ID** and **Sandbox Secret Key**: Create a REST app at [developer.paypal.com](https://developer.paypal.com/dashboard/applications) and copy its client ID and secret key here. The app must belong to the environment you selected. Each environment has its own credentials and its own webhook.
 * **Live Webhook ID** and **Sandbox Webhook ID**: The ID PayPal gives to the webhook you add to the REST app. It starts with `WH-` or is a long hexadecimal string. Without it, notifications cannot be verified as coming from PayPal and are rejected, so an order is only completed if the customer's browser returns to your site.
@@ -39,7 +39,7 @@ Customers who pay inside a mobile app, through the CM Live Deal App add-on, also
 
 ### PayPal Payments Standard (legacy)
 
-![/images/payment-plugin-4-0-paypal-standard.png](/images/payment-plugin-4-0-paypal-standard.png)
+![/images/payment-plugin-4-0-paypal-standard.webp](/images/payment-plugin-4-0-paypal-standard.webp)
 
 * **PayPal Email**: The email address of the PayPal account that receives the payments. A payment to any other account does not complete an order.
 * **Seconds to Wait**: How many seconds the checkout page waits before it takes the customer to PayPal, from 0 to 30. The customer can also click **Go to PayPal Now**.
@@ -56,7 +56,7 @@ Until then, the order stays unpaid and the customer gets no coupon. With the RES
 
 ## Stripe
 
-![/images/payment-plugin-4-0-stripe.png](/images/payment-plugin-4-0-stripe.png)
+![/images/payment-plugin-4-0-stripe.webp](/images/payment-plugin-4-0-stripe.webp)
 
 At checkout, the customer is taken to Stripe's payment page and comes back to your site after paying.
 

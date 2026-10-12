@@ -2,7 +2,7 @@
 title: Administration Area
 weight: 110
 ---
-![/images/com_cmlivedeal_administration_area.png](/images/com_cmlivedeal_administration_area.png)
+![/images/com_cmlivedeal_administration_area.webp](/images/com_cmlivedeal_administration_area.webp)
 
 ##### Settings for the administration area.
 

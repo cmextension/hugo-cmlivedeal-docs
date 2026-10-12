@@ -5,11 +5,11 @@ weight: 60
 
 In your back-end, go to Components -> CM Live Deal -> Cities to access the list of cities.
 
-![/images/com_cmlivedeal_dashboard_cities.png](/images/com_cmlivedeal_dashboard_cities.png)
+![/images/com_cmlivedeal_dashboard_cities.webp](/images/com_cmlivedeal_dashboard_cities.webp)
 
 Click `New` button on the toolbar to create a new city.
 
-![/images/city_list.png](/images/city_list.png)
+![/images/city_list.webp](/images/city_list.webp)
 
 The form to create new city (and to edit existing city) has the following fields:
 
@@ -28,8 +28,8 @@ The form to create new city (and to edit existing city) has the following fields
 *   **Modified by**: The person who does the last modification.
 *   **ID**: The ID of the city.
 
-![/images/city_form.png](/images/city_form.png)
+![/images/city_form.webp](/images/city_form.webp)
 
 After saving the new city, it is displayed in your city list.
 
-![/images/city_list_saved.png](/images/city_list_saved.png)
+![/images/city_list_saved.webp](/images/city_list_saved.webp)

@@ -4,10 +4,10 @@ weight: 40
 ---
 In your back-end, go to Components -> CM Live Deal -> Merchants to access the merchant map.
 
-![/images/com_cmlivedeal_dashboard_merchant_map.png](/images/com_cmlivedeal_dashboard_merchant_map.png)
+![/images/com_cmlivedeal_dashboard_merchant_map.webp](/images/com_cmlivedeal_dashboard_merchant_map.webp)
 
 The map is drawn with the provider you chose in the component's options, Google Maps or OpenStreetMap, and works the same way with both. On it you can see the cities and the merchants in every city. Every city has a circle, if the merchant is in the circle of a city that means the merchant's deals can be listed in the deal list when users search for deals in that city.
 
 If there is any merchant that is not in the circle of any city, you should create a new city for that merchant, or extend the radius of the nearest city, otherwise the deals of these merchants are not searchable.
 
-![/images/merchant_map.png](/images/merchant_map.png)
+![/images/merchant_map.webp](/images/merchant_map.webp)

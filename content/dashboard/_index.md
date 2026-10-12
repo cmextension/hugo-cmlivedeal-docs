@@ -10,7 +10,7 @@ The page opens first and the numbers load a moment later. Each part loads on its
 
 ## The numbers at the top
 
-![/images/dashboard-4-0-overview.png](/images/dashboard-4-0-overview.png)
+![/images/dashboard-4-0-overview.webp](/images/dashboard-4-0-overview.webp)
 
 * **Total deals**: every deal on the site, in any state.
 * **Live deals**: deals that visitors can see right now. A deal is live when it is published, approved, and the current time is between its `Starting time` and `Ending time`. A deal that repeats weekly is only live during one of its time slots. The front-end deal list uses the same rule.
@@ -48,7 +48,7 @@ The other charts always cover everything your site has recorded.
 
 ## Deals, coupons, merchants and cities
 
-![/images/dashboard-4-0-charts.png](/images/dashboard-4-0-charts.png)
+![/images/dashboard-4-0-charts.webp](/images/dashboard-4-0-charts.webp)
 
 * **Deals by state**: how many deals are `Online`, `Scheduled` (they start later), `Expired`, `Unpublished` or `Waiting for approval`. Every deal is in exactly one of these. This chart only looks at the starting and ending time, so a weekly deal between two time slots still counts as `Online` here.
 * **Coupon redemption**: captured coupons split into `Redeemed coupons` and `Not redeemed yet`.
@@ -57,7 +57,7 @@ The other charts always cover everything your site has recorded.
 
 ## Top deals
 
-![/images/dashboard-4-0-top-deals.png](/images/dashboard-4-0-top-deals.png)
+![/images/dashboard-4-0-top-deals.webp](/images/dashboard-4-0-top-deals.webp)
 
 This card lists the ten leading deals, with one tab for each measure:
 

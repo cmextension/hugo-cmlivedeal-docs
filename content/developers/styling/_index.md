@@ -104,7 +104,7 @@ Dark mode is a component setting, not a template one: `Components > CM Live Deal
 
 The setting is written onto the wrapper as `data-cmld-theme`. In dark mode CM Live Deal also gives its wrapper a background and padding, so the block reads as a dark panel even on a light page:
 
-![/images/styling-4-0-dark.png](/images/styling-4-0-dark.png)
+![/images/styling-4-0-dark.webp](/images/styling-4-0-dark.webp)
 
 **Write your colours for both themes.** The dark rules set the same variables again on a more specific selector, so a colour you set on `.cmlivedeal` alone is used in light mode and then overruled in dark mode. Set it in both places:
 
@@ -150,7 +150,7 @@ Say you want squarer cards, a little more air between the deals, and a purple ac
 
 Save it and reload the deal list:
 
-![/images/styling-4-0-tokens.png](/images/styling-4-0-tokens.png)
+![/images/styling-4-0-tokens.webp](/images/styling-4-0-tokens.webp)
 
 The four variables were enough for the cards, the popup, the countdown and the corners everywhere, because all of those were built from them. The last rule is only needed because the button is a Bootstrap `btn btn-primary`, which belongs to your template, not to CM Live Deal.
 

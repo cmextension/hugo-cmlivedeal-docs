@@ -4,19 +4,19 @@ weight: 140
 ---
 To configure your Search module, you go to System -> Site Modules (under Manage section)
 
-![/images/module_menu.png](/images/module_menu.png)
+![/images/module_menu.webp](/images/module_menu.webp)
 
 Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see the `Search - CM Live Deal` module in your module list.
 
-![/images/module_list_search.png](/images/module_list_search.png)
+![/images/module_list_search.webp](/images/module_list_search.webp)
 
 Click on the module name to edit its settings. You can give the module a new name by modifying `Title` field. In the `Module` tab, you set `Status` to `Published` and select the position you want to put this module in `Position` option.
 
-![/images/mod_cmlivedeal_search_tab_module.png](/images/mod_cmlivedeal_search_tab_module.png)
+![/images/mod_cmlivedeal_search_tab_module.webp](/images/mod_cmlivedeal_search_tab_module.webp)
 
 In `Options` tab, you can configure the main settings of the module.
 
-![/images/mod_cmlivedeal_search_tab_options.png](/images/mod_cmlivedeal_search_tab_options.png)
+![/images/mod_cmlivedeal_search_tab_options.webp](/images/mod_cmlivedeal_search_tab_options.webp)
 
 *   **Display**: How the search form is laid out: `Inline` or `Vertical`. The inline layout shows no labels. You can see both layouts in the examples below.
 *   **Keyword field CSS**: CSS classes for the keyword field.
@@ -34,22 +34,22 @@ CSS fields are useful if you want to customize the element of search form to mat
 
 In `Menu Assignment` tab, you configure what pages the module is displayed on.
 
-![/images/mod_cmlivedeal_search_menu_assignment.png](/images/mod_cmlivedeal_search_menu_assignment.png)
+![/images/mod_cmlivedeal_search_menu_assignment.webp](/images/mod_cmlivedeal_search_menu_assignment.webp)
 
 After adjusting the settings, you can save the module and then you will receive `Module saved` message. If you change the module's name, you can see its name is updated in the module list.
 
-![/images/mod_cmlivedeal_search_saved.png](/images/mod_cmlivedeal_search_saved.png)
+![/images/mod_cmlivedeal_search_saved.webp](/images/mod_cmlivedeal_search_saved.webp)
 
 You can check on your front-end to see if the module is displayed properly. The below screenshot is how the inline search form is displayed in the `sidebar-right` position of Joomla!'s default Cassiopeia template.
 
-![/images/mod_cmlivedeal_search_frontend.png](/images/mod_cmlivedeal_search_frontend.png)
+![/images/mod_cmlivedeal_search_frontend.webp](/images/mod_cmlivedeal_search_frontend.webp)
 
 **Examples** (the settings on the left side, the result on the right side)
 
 Example of how inline search form is displayed. The Clear button is displayed and the buttons have only icons. The keyword field is customized by using `form-control-sm` class of Bootstrap 5.
 
-![/images/mod_cmlivedeal_search_inline.png](/images/mod_cmlivedeal_search_inline.png)
+![/images/mod_cmlivedeal_search_inline.webp](/images/mod_cmlivedeal_search_inline.webp)
 
 Example of how vertical search form is displayed. The Clear button is displayed and is customized by `btn-light` class of Bootstrap 5. The Search button is customized by `btn-success` class of Bootstrap 5. Icon and text are both used in the buttons. The keyword field is customized by using `form-control-sm` class of Bootstrap 5.
 
-![/images/mod_cmlivedeal_search_vertical.png](/images/mod_cmlivedeal_search_vertical.png)
+![/images/mod_cmlivedeal_search_vertical.webp](/images/mod_cmlivedeal_search_vertical.webp)

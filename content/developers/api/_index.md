@@ -20,7 +20,7 @@ Four settings have to be right. The [Setup card](/dashboard/setup-card/) on the 
 
 Go to `System > Plugins`, search for `CM Live Deal` and open the `Web Services - CM Live Deal` plugin. It is **disabled** after a fresh install, because most sites do not need an API. Set `Status` to `Enabled` and save.
 
-![/images/api-4-0-plugin.png](/images/api-4-0-plugin.png)
+![/images/api-4-0-plugin.webp](/images/api-4-0-plugin.webp)
 
 Without this plugin the routes below do not exist and every request answers `404`.
 
@@ -28,7 +28,7 @@ Without this plugin the routes below do not exist and every request answers `404
 
 Go to `System > Global Configuration > Permissions`, click the group whose members will call the API, set `Web Services Login` to `Allowed` and save.
 
-![/images/api-4-0-permissions.png](/images/api-4-0-permissions.png)
+![/images/api-4-0-permissions.webp](/images/api-4-0-permissions.webp)
 
 Only Super Users have this permission at first. If your merchants will use a scanner app, give it to your merchant group. If your customers will use a mobile app, give it to `Registered`.
 
@@ -36,7 +36,7 @@ Only Super Users have this permission at first. If your merchants will use a sca
 
 This is a second, separate setting. Go to `System > Plugins` and open `User - Joomla API Token`. Add the same groups to `Allowed User Groups` and save.
 
-![/images/api-4-0-token-plugin.png](/images/api-4-0-token-plugin.png)
+![/images/api-4-0-token-plugin.webp](/images/api-4-0-token-plugin.webp)
 
 It lists only Super Users at first. An account with `Web Services Login` but no token still gets a bare `401`.
 
@@ -44,7 +44,7 @@ It lists only Super Users at first. An account with `Web Services Login` but no 
 
 Every user has their own token. Log in as that user, open their profile, save it once, then open it again and read the `Joomla API Token` tab.
 
-![/images/api-4-0-token.png](/images/api-4-0-token.png)
+![/images/api-4-0-token.webp](/images/api-4-0-token.webp)
 
 A few things to know about tokens:
 

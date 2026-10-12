@@ -4,13 +4,13 @@ weight: 80
 ---
 To create a new deal in your Joomla!'s back-end as an administrator, go to `Components` -> `CM Live Deal` -> `Deals` to open the list of deals.
 
-![/images/com_cmlivedeal_dashboard_new_deal_backend.png](/images/com_cmlivedeal_dashboard_new_deal_backend.png)
+![/images/com_cmlivedeal_dashboard_new_deal_backend.webp](/images/com_cmlivedeal_dashboard_new_deal_backend.webp)
 
 Click the `New` button on the toolbar to create a new deal.
 
 The form to create or edit a deal looks like the screenshot below.
 
-![/images/deal_backend_form.png](/images/deal_backend_form.png)
+![/images/deal_backend_form.webp](/images/deal_backend_form.webp)
 
 Enter your deal's details: name, description, fine print, starting time and ending time. You also need to select a merchant and a category for your deal.
 
@@ -34,7 +34,7 @@ If a deal's discount does not fit these 3 types, select `None`. The original and
 *   **Run continuously**: the deal is live all the time from the starting time to the ending time.
 *   **Repeat weekly**: the deal is live only on the days and hours you choose. For example, a restaurant can run a lunch deal every Tuesday and Wednesday from 14:00 to 17:00, when it is quiet.
 
-![/images/deal-form-4-0-schedule-backend.png](/images/deal-form-4-0-schedule-backend.png)
+![/images/deal-form-4-0-schedule-backend.webp](/images/deal-form-4-0-schedule-backend.webp)
 
 When you choose `Repeat weekly`, three more fields are shown:
 
@@ -63,7 +63,7 @@ Between two time slots, for example on a Monday:
 *   The deal is not shown in the deal list or in the CM Live Deal modules, and the deal search does not find it.
 *   Its deal page still opens. It says `Not available right now` and when the deal is back, for example `Back on Saturday, 19 September 2026 11:00`. Customers cannot capture a coupon until then.
 
-![/images/deal-page-4-0-back-on.png](/images/deal-page-4-0-back-on.png)
+![/images/deal-page-4-0-back-on.webp](/images/deal-page-4-0-back-on.webp)
 
 Smart Search only uses the starting and ending times. It still lists the deal between time slots, and the link opens the deal page above.
 
@@ -71,7 +71,7 @@ The dashboard's `Live deals` tile uses the schedule too. See [Dashboard](/dashbo
 
 ## Status, approval and access
 
-![/images/deal-form-4-0-access.png](/images/deal-form-4-0-access.png)
+![/images/deal-form-4-0-access.webp](/images/deal-form-4-0-access.webp)
 
 To publish the deal, set `Status` to `Published` and `Approval` to `Yes`. Visitors then see the deal between its starting and ending times, and inside its schedule.
 
@@ -89,7 +89,7 @@ If you enable `Limit coupon quantity` in the component's configuration, the `Cou
 
 If you enable advance payment in [configuration](/configuration/advance-payment/), the form has an `Advance payment` field. Turn it on to ask customers to pay in advance for this deal. The `Original price` and `Sale price` fields are always shown when advance payment is enabled.
 
-![/images/advance_payment_deal_backend_form.png](/images/advance_payment_deal_backend_form.png)
+![/images/advance_payment_deal_backend_form.webp](/images/advance_payment_deal_backend_form.webp)
 
 *   **Meta description**: Meta description for SEO. Only administrators can see this field, in the back-end.
 *   **Meta keywords**: Meta keywords for SEO. Only administrators can see this field, in the back-end.
@@ -111,4 +111,4 @@ If something in the form is wrong, the deal is not saved. The form opens again w
 
 After you save the deal, it is shown in your deal list.
 
-![/images/deal_backend_list_saved.png](/images/deal_backend_list_saved.png)
+![/images/deal_backend_list_saved.webp](/images/deal_backend_list_saved.webp)

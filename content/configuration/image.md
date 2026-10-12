@@ -2,7 +2,7 @@
 title: Image
 weight: 120
 ---
-![/images/com_cmlivedeal_image.png](/images/com_cmlivedeal_image.png)
+![/images/com_cmlivedeal_image.webp](/images/com_cmlivedeal_image.webp)
 
 ##### Image settings.
 

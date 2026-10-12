@@ -3,7 +3,7 @@ title: General
 weight: 40
 ---
 
-![/images/options-4-0-general.png](/images/options-4-0-general.png)
+![/images/options-4-0-general.webp](/images/options-4-0-general.webp)
 
 *   **Font Awesome**: CM Live Deal uses Font Awesome for icons. If your template or another extension already loads Font Awesome, set this option to `Disabled` so CM Live Deal does not load it again.
 *   **Dark mode**: Show CM Live Deal's pages in dark colours. Only CM Live Deal's own content changes, not your template, so pick the value that matches your template.

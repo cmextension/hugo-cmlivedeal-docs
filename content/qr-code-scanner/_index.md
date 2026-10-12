@@ -14,7 +14,7 @@ Both scanners are disabled by default. Enable and configure them in [the Coupon 
 
 Create a menu item for each scanner you use. The menu item types are `Customer QR Code Scanner` and `Merchant QR Code Scanner`.
 
-![/images/qr_code_scanner_menu_item.png](/images/qr_code_scanner_menu_item.png)
+![/images/qr_code_scanner_menu_item.webp](/images/qr_code_scanner_menu_item.webp)
 
 * Only merchants can use the merchant scanner. Set the menu item's **Access** to a level for your merchant group, so other visitors do not see it in the menu.
 * Anyone can use the customer scanner, guests too. It usually runs on a tablet at the shop. Turn on **Component-only view for the customer QR code scanner** to hide the site's menus and modules on that device.
@@ -28,7 +28,7 @@ The scanner uses the device's camera through the web browser. Two things must be
 * **The site must use HTTPS.** Browsers only give the camera to secure pages. Over plain HTTP, the scanner does not start.
 * **The browser must be allowed to use the camera.** The browser asks the first time. If the visitor refuses, they must allow the camera for your site in the browser settings.
 
-![/images/qr_code_scanner_permission.png](/images/qr_code_scanner_permission.png)
+![/images/qr_code_scanner_permission.webp](/images/qr_code_scanner_permission.webp)
 
 On a phone or tablet, the scanner uses the back camera.
 
@@ -53,13 +53,13 @@ The end of the message tells the visitor what to do instead:
 
 The merchant opens the scanner page and holds the customer's coupon in front of the camera. The merchant can also type the code in **Enter coupon code** and click **Search**, or press Enter. Typing works without a camera, so merchants can also use the page on a computer.
 
-![/images/qr-code-scanner-4-0-merchant.png](/images/qr-code-scanner-4-0-merchant.png)
+![/images/qr-code-scanner-4-0-merchant.webp](/images/qr-code-scanner-4-0-merchant.webp)
 
 The scanner finds only coupons for the merchant's own deals. For any other code, it shows "Coupon not found".
 
 When the coupon is found, a window shows it: the coupon code, the date it was captured, the deal, the expiry date, and whether it is redeemed. If **Show customer stats** and **Show customer visits** are on in [the Merchant options](/configuration/merchant/), the customer's stats and visits are shown too.
 
-![/images/qr-code-scanner-4-0-coupon.png](/images/qr-code-scanner-4-0-coupon.png)
+![/images/qr-code-scanner-4-0-coupon.webp](/images/qr-code-scanner-4-0-coupon.webp)
 
 * If the coupon is not redeemed, click **Redeem**.
 * If the coupon is already redeemed, click **Cancel Redemption** to undo it, for example after a mistake.
@@ -78,7 +78,7 @@ The customer holds their coupon in front of the camera. When the code is found, 
 
 The message closes by itself after the seconds set in **Close the customer scanner message after (seconds)**, and the scanner is ready for the next coupon.
 
-![/images/qr-code-scanner-4-0-customer.png](/images/qr-code-scanner-4-0-customer.png)
+![/images/qr-code-scanner-4-0-customer.webp](/images/qr-code-scanner-4-0-customer.webp)
 
 Put instructions for customers in **Text above the customer QR code scanner** and **Text below the customer QR code scanner**. If the device has no working camera, the page tells the customer to ask the merchant to scan the coupon instead.
 

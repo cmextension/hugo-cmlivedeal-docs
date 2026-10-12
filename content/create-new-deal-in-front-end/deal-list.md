@@ -6,7 +6,7 @@ The deal list is where visitors browse deals and find the ones they want.
 
 In your back end, create a menu item of the `Deal List` type. Open that menu item on your site to see the list.
 
-![/images/deal-list-4-0-cards.png](/images/deal-list-4-0-cards.png)
+![/images/deal-list-4-0-cards.webp](/images/deal-list-4-0-cards.webp)
 
 ## Deal cards
 
@@ -43,7 +43,7 @@ When **Show featured deals first** is enabled, featured deals stay at the top wh
 
 ## Deals near me
 
-![/images/deal-list-4-0-near-me.png](/images/deal-list-4-0-near-me.png)
+![/images/deal-list-4-0-near-me.webp](/images/deal-list-4-0-near-me.webp)
 
 When **Geolocation service** is set in [General](/configuration/general/) options, the list shows a `Deals near me` button.
 
@@ -63,7 +63,7 @@ Visitors can also search near their location, or in a city, with the [Search mod
 
 ## Map view
 
-![/images/deal-list-4-0-map.png](/images/deal-list-4-0-map.png)
+![/images/deal-list-4-0-map.webp](/images/deal-list-4-0-map.webp)
 
 When **Map view** is enabled in [General](/configuration/general/) options, a `List` / `Map` switch is added to the list.
 

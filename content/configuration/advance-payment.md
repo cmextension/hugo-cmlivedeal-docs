@@ -3,7 +3,7 @@ title: Advance Payment
 weight: 90
 ---
 
-![/images/com_cmlivedeal_advance_payment.png](/images/com_cmlivedeal_advance_payment.png)
+![/images/com_cmlivedeal_advance_payment.webp](/images/com_cmlivedeal_advance_payment.webp)
 
 ##### When a deal uses advance payment, customers pay part of the price online to get the coupon, and pay the rest to the merchant when they redeem it.
 

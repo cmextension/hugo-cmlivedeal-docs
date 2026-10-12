@@ -6,18 +6,18 @@ Before you use or translate CM Live Deal in another language, you need to instal
 
 In your Joomla! back-end, you go to System -> Languages (under Manage tab).
 
-![/images/installation_menu_languages.png](/images/installation_menu_languages.png)
+![/images/installation_menu_languages.webp](/images/installation_menu_languages.webp)
 
-You can see the list of installed languages on your site. Click `Install Language` button on the toolbar to install a new language.
+You can see the list of installed languages on your site. Click the `Install Languages` button on the toolbar to install a new language.
 
-![/images/translation_list.png](/images/translation_list.png)
+![/images/translation_list.webp](/images/translation_list.webp)
 
-Search for the language you want to install, select it in the list and click `Install` button.
+Search for the language you want to install and click the `Install` button in its row.
 
-![/images/translation_search.png](/images/translation_search.png)
+![/images/translation_search.webp](/images/translation_search.webp)
 
-After installing new language, page will redirect to the list of installed languages with `Installation of the language pack was successful` message, and you can see your new language in the list.
+After the language is installed, you see the message `Installation of the language pack was successful`. The button in the language's row changes to `Reinstall`.
 
-![/images/translation_list_2.png](/images/translation_list_2.png)
+![/images/translation_list_2.webp](/images/translation_list_2.webp)
 
 You need to remember the language tag of your new language. In the above screenshot, French language package is installed, and `fr-FR` is the language tag of French.

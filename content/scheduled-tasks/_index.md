@@ -15,7 +15,7 @@ The package enables the plugin **Task - CM Live Deal** when it installs it. But 
 1. Go to `System > Manage > Scheduled Tasks` and click `New`.
 2. Type `CM Live Deal` in the search box and click the task you want.
 
-   ![/images/scheduled-tasks-4-0-select.png](/images/scheduled-tasks-4-0-select.png)
+   ![/images/scheduled-tasks-4-0-select.webp](/images/scheduled-tasks-4-0-select.webp)
 
 3. Enter a **Title**.
 4. Choose an **Execution Rule**. For both tasks, `Interval, Days` with `1` is a good choice: the task runs once a day.
@@ -52,7 +52,7 @@ INFO	Task> Unpublished 6 deals that have ended.
 
 ## Expire deals
 
-![/images/scheduled-tasks-4-0-expire.png](/images/scheduled-tasks-4-0-expire.png)
+![/images/scheduled-tasks-4-0-expire.webp](/images/scheduled-tasks-4-0-expire.webp)
 
 This task unpublishes every published deal whose ending time has passed.
 
@@ -66,7 +66,7 @@ Developers: the task fires `onCMLDAfterChangeDealState` with the action `expire`
 
 ## Expiry reminders
 
-![/images/scheduled-tasks-4-0-reminder.png](/images/scheduled-tasks-4-0-reminder.png)
+![/images/scheduled-tasks-4-0-reminder.webp](/images/scheduled-tasks-4-0-reminder.webp)
 
 This task emails people before a deal ends.
 

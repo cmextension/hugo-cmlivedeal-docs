@@ -6,23 +6,23 @@ CM Live Deal Cities module is used to display a list of all published cities.
 
 To configure the module, you go to System -> Site Modules
 
-![/images/module_menu.png](/images/module_menu.png)
+![/images/module_menu.webp](/images/module_menu.webp)
 
 Joomla! creates a new module for you automatically after you install the package of CM Live Deal. You can see the `Cities - CM Live Deal` module in your module list.
 
-![/images/module_list_city.png](/images/module_list_city.png)
+![/images/module_list_city.webp](/images/module_list_city.webp)
 
 Click on the module name to edit its settings. You can give the module a new name by modifying `Title` field. In the `Module` tab, you set `Status` to `Published` and select the position you want to put this module in `Position` option.
 
-![/images/mod_cmlivedeal_cities_tab_module.png](/images/mod_cmlivedeal_cities_tab_module.png)
+![/images/mod_cmlivedeal_cities_tab_module.webp](/images/mod_cmlivedeal_cities_tab_module.webp)
 
 In `Menu Assignment` tab, you configure what pages the module is displayed on.
 
-![/images/mod_cmlivedeal_cities_menu_assignment.png](/images/mod_cmlivedeal_cities_menu_assignment.png)
+![/images/mod_cmlivedeal_cities_menu_assignment.webp](/images/mod_cmlivedeal_cities_menu_assignment.webp)
 
 In `Options` tab, you can configure the main settings of the module.
 
-![/images/mod_cmlivedeal_cities_tab_options.png](/images/mod_cmlivedeal_cities_tab_options.png)
+![/images/mod_cmlivedeal_cities_tab_options.webp](/images/mod_cmlivedeal_cities_tab_options.webp)
 
 *   **Show number of deals**: Show the number of deals next to each city.
 *   **`<ul>` CSS class**: CSS class for the `<ul>` element.
@@ -38,8 +38,8 @@ For example, you can use the CSS classes from Bootstrap 5 like the screenshot ab
 
 After adjusting the settings, you can save the module and then you will receive `Module saved` message. If you change the module's name, you can see its name is updated in the module list.
 
-![/images/mod_cmlivedeal_cities_saved.png](/images/mod_cmlivedeal_cities_saved.png)
+![/images/mod_cmlivedeal_cities_saved.webp](/images/mod_cmlivedeal_cities_saved.webp)
 
 You can check on your front-end to see if the module is displayed properly.
 
-![/images/mod_cmlivedeal_cities_frontend.png](/images/mod_cmlivedeal_cities_frontend.png)
+![/images/mod_cmlivedeal_cities_frontend.webp](/images/mod_cmlivedeal_cities_frontend.webp)

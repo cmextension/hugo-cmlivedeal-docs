@@ -2,7 +2,7 @@
 title: Merchant
 weight: 70
 ---
-![/images/com_cmlivedeal_merchant.png](/images/com_cmlivedeal_merchant.png)
+![/images/com_cmlivedeal_merchant.webp](/images/com_cmlivedeal_merchant.webp)
 
 *   **Merchant user group**: The Joomla! user group that merchants belong to. Only users in this group can submit deals and edit a merchant profile. Select the group you created in the step above.
 *   **Add merchant to group**: How new merchants are added to the merchant user group after they register.
@@ -20,7 +20,7 @@ weight: 70
 ##### Profile
 * **Get merchant profile from another source**: If you choose the membership component, the subscriber's profile is copied to the CM Live Deal merchant profile when a subscription is made. If you choose Easy Profile, CM Live Deal uses the Easy Profile data every time the merchant profile is shown.
 
-##### The options below are only used when the merchant profile comes from another component. You can set this in the `Get merchant profile from another source` option.
+The options below are only used when the merchant profile comes from another component. You set this in the **Get merchant profile from another source** option above.
 
 * **Field for business name**: The alias of the field for business name.
 * **Field for website**: The alias of the field for website.

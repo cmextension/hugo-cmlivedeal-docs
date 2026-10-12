@@ -134,7 +134,7 @@ The rest of the file draws the buttons for you, so there is nothing else to chan
 
 **5. Save and reload a deal.** The new button is there:
 
-![/images/template-overrides-4-0-share.png](/images/template-overrides-4-0-share.png)
+![/images/template-overrides-4-0-share.webp](/images/template-overrides-4-0-share.webp)
 
 `title` is a language key, used for screen readers. Add `COM_CMLIVEDEAL_SHARE_WHATSAPP` to your site's language override in `System > Language Overrides`, or use a key that already exists.
 

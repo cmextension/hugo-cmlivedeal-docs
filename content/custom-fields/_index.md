@@ -11,7 +11,7 @@ You do not need a new option in CM Live Deal for this. Joomla already has many f
 
 Go to `Components > CM Live Deal > Fields` to add a field. Go to `Components > CM Live Deal > Field Groups` to add a group.
 
-![/images/custom-fields-4-0-list.png](/images/custom-fields-4-0-list.png)
+![/images/custom-fields-4-0-list.webp](/images/custom-fields-4-0-list.webp)
 
 The list at the top left lets you choose where a field belongs:
 
@@ -30,7 +30,7 @@ A field that is not in a group is shown under `Fields`. A field in a group is sh
 
 Open a deal. The field is near the bottom of the form.
 
-![/images/custom-fields-4-0-backend-form.png](/images/custom-fields-4-0-backend-form.png)
+![/images/custom-fields-4-0-backend-form.webp](/images/custom-fields-4-0-backend-form.webp)
 
 If you give a field categories and then change a deal's category, the form does not change at once. Save the deal first. When the form opens again, it shows the fields of the new category.
 
@@ -38,7 +38,7 @@ If you give a field categories and then change a deal's category, the form does 
 
 Merchants see your fields on their deal form in the front-end.
 
-![/images/custom-fields-4-0-frontend-form.png](/images/custom-fields-4-0-frontend-form.png)
+![/images/custom-fields-4-0-frontend-form.webp](/images/custom-fields-4-0-frontend-form.webp)
 
 By default they cannot change them: Joomla shows the fields but disables them. To let merchants fill them in:
 
@@ -55,7 +55,7 @@ You can also set `Edit Custom Field Value` on one field, in the `Permissions` ta
 
 Visitors see the fields in the deal popup and on the deal page. They do not see them on the deal cards in the list.
 
-![/images/custom-fields-4-0-popup.png](/images/custom-fields-4-0-popup.png)
+![/images/custom-fields-4-0-popup.webp](/images/custom-fields-4-0-popup.webp)
 
 Edit the field and open the `Options` tab. `Automatic Display` decides where the field is shown:
 

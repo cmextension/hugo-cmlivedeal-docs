@@ -6,11 +6,11 @@ In your back-end, go to Components -> CM Live Deal -> Coupons to access the list
 
 You can edit an existing coupon be clicking on its code. You can also create a new coupon with your own custom coupon code and assign it to a specific user.
 
-![/images/coupon_backend_list.png](/images/coupon_backend_list.png)
+![/images/coupon_backend_list.webp](/images/coupon_backend_list.webp)
 
 In the edit form, there are the following fields:
 
-![/images/coupon_backend_form.png](/images/coupon_backend_form.png)
+![/images/coupon_backend_form.webp](/images/coupon_backend_form.webp)
 
 *   **Code**: Coupon code.
 *   **User**: The user who owns this coupon.

@@ -11,7 +11,7 @@ The package enables the plugin **Privacy - CM Live Deal** when it installs it. Y
 
 Go to `Users > Privacy > Capabilities` and open **Privacy - CM Live Deal**. Use this list when you write your site's privacy policy.
 
-![/images/privacy-4-0-capabilities.png](/images/privacy-4-0-capabilities.png)
+![/images/privacy-4-0-capabilities.webp](/images/privacy-4-0-capabilities.webp)
 
 * **Orders**: the name, email address and postal address entered at checkout, and the amount, payment method and transaction ID of the payment service.
 * **Coupons**: the coupons a person captured, and when they captured and redeemed them.
@@ -25,7 +25,7 @@ A person sends a request with Joomla's request form on the site, or you add one 
 
 Open the request. The buttons depend on the request type.
 
-![/images/privacy-4-0-export-request.png](/images/privacy-4-0-export-request.png)
+![/images/privacy-4-0-export-request.webp](/images/privacy-4-0-export-request.webp)
 
 * **Export**: click `Export Data` to download an XML file, or `Email Data Export` to send it to the person.
 * **Remove**: click `Delete Data`.
@@ -85,7 +85,7 @@ Joomla's own **Privacy - User Accounts** plugin handles the account itself: it r
 
 Deals are public content, and orders and coupons belong to them. Only you can decide what happens to those. So CM Live Deal refuses to remove a merchant who still has deals, and nothing is removed:
 
-![/images/privacy-4-0-remove-refused.png](/images/privacy-4-0-remove-refused.png)
+![/images/privacy-4-0-remove-refused.webp](/images/privacy-4-0-remove-refused.webp)
 
 To finish the request:
 

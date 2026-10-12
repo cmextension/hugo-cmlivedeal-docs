@@ -6,7 +6,7 @@ There are 2 ways to show a deal's details. You choose one with **Deal detail** i
 
 ## Popup
 
-![/images/deal-popup-4-0.png](/images/deal-popup-4-0.png)
+![/images/deal-popup-4-0.webp](/images/deal-popup-4-0.webp)
 
 The deal opens in a popup on top of the deal list. This is the default. The visitor can close the popup and open another deal without leaving the list.
 
@@ -28,7 +28,7 @@ When the popup opens, the address in the browser changes to the deal's own link,
 
 ### On phones
 
-![/images/deal-popup-4-0-phone.png](/images/deal-popup-4-0-phone.png)
+![/images/deal-popup-4-0-phone.webp](/images/deal-popup-4-0-phone.webp)
 
 On screens narrower than 576px, the popup fills the whole screen. The `Get coupon` button stays at the bottom while the visitor scrolls.
 
@@ -38,13 +38,13 @@ A deal that repeats weekly is not in the deal list between its time slots. If a 
 
 ## Separate page
 
-![/images/deal-page-4-0.png](/images/deal-page-4-0.png)
+![/images/deal-page-4-0.webp](/images/deal-page-4-0.webp)
 
 The deal opens on its own page, with the deal's details, the merchant's contact details, a map and share buttons.
 
 ### Sticky buy bar
 
-![/images/deal-page-4-0-buy-bar.png](/images/deal-page-4-0-buy-bar.png)
+![/images/deal-page-4-0-buy-bar.webp](/images/deal-page-4-0-buy-bar.webp)
 
 When **Sticky buy bar on mobile** is enabled in [Deal](/configuration/deal/) options, screens narrower than 768px show the `Get coupon` button in a bar at the bottom of the deal page. The bar stays in view while the visitor scrolls. It also shows the prices, when the deal shows them, and how many coupons are left. The button near the top of the page is hidden, so there is only one.
 

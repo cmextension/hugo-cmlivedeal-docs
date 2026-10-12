@@ -4,15 +4,15 @@ weight: 40
 ---
 If the membership component that you select in the configuration is not installed yet, you will get an empty page when access Membership Plans page.
 
-![/images/com_cmlivedeal_membership_list_empty.jpg](/images/com_cmlivedeal_membership_list_empty.jpg)
+![/images/com_cmlivedeal_membership_list_empty.webp](/images/com_cmlivedeal_membership_list_empty.webp)
 
 If the component is already installed, you will get the list of membership plans.
 
-![/images/com_cmlivedeal_membership_list.jpg](/images/com_cmlivedeal_membership_list.jpg)
+![/images/com_cmlivedeal_membership_list.webp](/images/com_cmlivedeal_membership_list.webp)
 
 After creating the plans in the membership component, you go back to CM Live Deal's Membership Plans to create the plans to connect CM Live Deal and the membership component, click `New` button on the toolbar to create a new plan.
 
-![/images/com_cmlivedeal_membership_form.jpg](/images/com_cmlivedeal_membership_form.jpg)
+![/images/com_cmlivedeal_membership_form.webp](/images/com_cmlivedeal_membership_form.webp)
 
 *   **Plan name**: The name of the membership plan. Only administrators see it.
 *   **Integrated plan**: The matching plan in the integrated membership component.

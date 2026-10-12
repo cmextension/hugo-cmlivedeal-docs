@@ -6,15 +6,15 @@ Merchants can upload images to your site. CM Live Deal uses the settings of Joom
 
 In your back-end, go to `Content` -> `Media` to open the `Media Manager` component.
 
-![/images/com_media_menu.png](/images/com_media_menu.png)
+![/images/com_media_menu.webp](/images/com_media_menu.webp)
 
 You can see a page similar to the screenshot below.
 
-![/images/com_media_view.png](/images/com_media_view.png)
+![/images/com_media_view.webp](/images/com_media_view.webp)
 
 Click the `Options` button on the toolbar to configure the component.
 
-![/images/com_media_options.png](/images/com_media_options.png)
+![/images/com_media_options.webp](/images/com_media_options.webp)
 
 You can change the default settings of the Media Manager to suit your needs. If you have no special needs, keep the default settings.
 

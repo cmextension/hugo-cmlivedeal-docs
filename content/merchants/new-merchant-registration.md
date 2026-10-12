@@ -4,7 +4,7 @@ weight: 10
 ---
 Access your menu item for merchant registration that you create in [Configuration](/configuration/menu-item-for-merchant-registration-page/) section, fill the form and click the Register button.
 
-![/images/merchant_frontend_form.png](/images/merchant_frontend_form.png)
+![/images/merchant_frontend_form.webp](/images/merchant_frontend_form.webp)
 
 If in [CM Live Deal's Configuration](/configuration/merchant/), you set
 
@@ -14,4 +14,4 @@ If in [CM Live Deal's Configuration](/configuration/merchant/), you set
 
 Then your new merchant is displayed in User -> User Manager similar to the screenshot below.
 
-![/images/merchant_frontend_list.png](/images/merchant_frontend_list.png)
+![/images/merchant_frontend_list.webp](/images/merchant_frontend_list.webp)

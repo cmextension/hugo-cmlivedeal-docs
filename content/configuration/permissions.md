@@ -2,7 +2,7 @@
 title: Permissions
 weight: 130
 ---
-![/images/com_cmlivedeal_permissions.png](/images/com_cmlivedeal_permissions.png)
+![/images/com_cmlivedeal_permissions.webp](/images/com_cmlivedeal_permissions.webp)
 
 On the left side there are tabs for user groups. On the right side, we have the options of the permissions that the users in the selected group can do.
 

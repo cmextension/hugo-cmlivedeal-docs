@@ -5,7 +5,7 @@ weight: 225
 
 CM Live Deal adds deals to Joomla's **Smart Search**. When a visitor searches your site, the results show deals next to articles and other content.
 
-![/images/smart-search-4-0-results.png](/images/smart-search-4-0-results.png)
+![/images/smart-search-4-0-results.webp](/images/smart-search-4-0-results.webp)
 
 ## Turn it on
 
@@ -69,11 +69,11 @@ Each deal is filed in 3 branches. Visitors can use them to narrow the results, a
 
 To choose the branches, edit the plugin **Smart Search - CM Live Deal** and change **Search Filters**. Build the index again after you change them.
 
-![/images/smart-search-4-0-plugin.png](/images/smart-search-4-0-plugin.png)
+![/images/smart-search-4-0-plugin.webp](/images/smart-search-4-0-plugin.webp)
 
 For example, to make a search page that only finds deals, go to `Components > Smart Search > Search Filters`, create a filter, and tick `Deal` under **Search by Type**. Then choose the filter in your Smart Search menu item.
 
-![/images/smart-search-4-0-filter.png](/images/smart-search-4-0-filter.png)
+![/images/smart-search-4-0-filter.webp](/images/smart-search-4-0-filter.webp)
 
 A custom field with `Add as taxonomy` adds its own branch.
 

@@ -24,11 +24,11 @@ The form has the following fields:
 *   **Days**, **From** and **Until**: Only shown with `Repeat weekly`. The days of the week and the time of day when the deal is live, in the site's time zone. If `Until` is earlier than `From`, the deal runs past midnight into the next day.
 *   **Status**: Only published deals are shown in the deal list. Unpublish your deal to stop it.
 
-![/images/deal_frontend_form.png](/images/deal_frontend_form.png)
+![/images/deal_frontend_form.webp](/images/deal_frontend_form.webp)
 
 This is how a deal that runs every Tuesday and Wednesday from 14:00 to 17:00 looks in the form:
 
-![/images/deal-form-4-0-schedule-frontend.png](/images/deal-form-4-0-schedule-frontend.png)
+![/images/deal-form-4-0-schedule-frontend.webp](/images/deal-form-4-0-schedule-frontend.webp)
 
 Between two time slots, visitors do not see the deal in the deal list. The deal page says when it is back. Read more in [Starting time, ending time and schedule](/create-new-deal-in-back-end/#starting-time-ending-time-and-schedule).
 
@@ -49,7 +49,7 @@ What the merchant can change after that depends on the `Merchant can edit publis
 
 The merchant receives the message `Item successfully submitted.` if the deal is saved.
 
-![/images/deal_frontend_merchant_list_saved.png](/images/deal_frontend_merchant_list_saved.png)
+![/images/deal_frontend_merchant_list_saved.webp](/images/deal_frontend_merchant_list_saved.webp)
 
 If something in the form is wrong, the deal is not saved. The form opens again with everything the merchant entered, and a message says what to fix. For example:
 

@@ -4,7 +4,7 @@ weight: 10
 ---
 The Setup card is at the top of the dashboard (`Components` -> `CM Live Deal` -> `Dashboard`). It lists the settings your site needs before merchants can use it. It shows the settings that are already done as well as the ones that are not.
 
-![/images/setup-card-4-0.png](/images/setup-card-4-0.png)
+![/images/setup-card-4-0.webp](/images/setup-card-4-0.webp)
 
 * A green tick means the setting is done.
 * A warning sign means the setting is not done yet. The text tells you what to do, and the buttons on the right open the screen where you do it. The buttons open in a new tab, so the card is still there when you come back.
