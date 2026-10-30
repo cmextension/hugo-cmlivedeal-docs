@@ -33,4 +33,4 @@ weight: 40
 *   **Map zoom level**: The zoom level maps open at. The default is 15.
 *   **Default map location**: The location the map shows first, on both the site and the administrator. Click the map or drag the marker to the location you want, or enter its latitude and longitude. This works with both map providers.
 *   **Google Maps API key**: Your Google Maps API key, used for the maps in CM Live Deal. You can get a key at https://console.developers.google.com/. Only needed with Google Maps.
-*   **Falang integration**: Enable this option if you use Falang.
+*   **Falang integration**: Enable this option if you use Falang to translate your deals, cities, merchants and categories. It lets CM Live Deal understand links that use a translated alias. See [Falang](/translation/falang/).
