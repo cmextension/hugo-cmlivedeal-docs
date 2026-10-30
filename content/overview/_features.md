@@ -26,7 +26,7 @@ For users:
 *   For free deals, users don't need to pay to get coupon, only need to pay directly to merchant, no more asking website owner for refund. For deals requiring payment, users only need to pay a small amount to the site first, the remaining amount is paid at the merchant.
 *   Coupon is available immediately after claiming or paying, do not need to wait until deal reaches its minimum claim/purchase quantity like traditional `groupon` sites.
 *   See how long a deal still runs with a live countdown that changes colour as the ending time comes closer.
-*   Share deals to Facebook, X and Pinterest, or copy the deal's link with one click.
+*   Share deals to Facebook, X, Pinterest, WhatsApp, Telegram, email or the phone's own share menu, or copy the deal's link with one click. Choose which buttons to show in the options.
 *   Redeem coupon by scanning coupon's QR code.
 *   Dark mode: CM Live Deal's pages can follow the visitor's system setting, or stay light or dark, to match your template.
 *   Accessible pages: keyboard focus is always visible, buttons and links have text for screen readers, and tap targets are big enough on a phone.

@@ -8,11 +8,11 @@ The Setup card is at the top of the dashboard (`Components` -> `CM Live Deal` ->
 
 * A green tick means the setting is done.
 * A warning sign means the setting is not done yet. The text tells you what to do, and the buttons on the right open the screen where you do it. The buttons open in a new tab, so the card is still there when you come back.
-* The top right corner shows how many settings are done, for example `7 of 8 done`.
+* The top right corner shows how many settings are done, for example `8 of 9 done`.
 
 When everything is done, the card says `Everything is set up. You can hide this card.`
 
-The card only lists the settings that apply to your site. A new site sees three of them. A site that uses custom fields, the API and PayPal sees eight.
+The card only lists the settings that apply to your site. A new site sees four of them. A site that uses custom fields, the API and PayPal sees nine.
 
 ## Plugins the component needs
 
@@ -33,6 +33,17 @@ The card warns you when:
 
 * No folder is chosen. Create a folder inside the Media Manager's image folder, then click `Options` and choose it under `Image`.
 * The folder does not exist, or the site cannot write to it. Create the folder, or fix its file permissions on your server.
+
+## Menu items
+
+Visitors reach CM Live Deal's pages through menu items. The card checks that your site has a published menu item of each of these types:
+
+* **Deal List**. Visitors find the deals here.
+* **Deal Management**. Merchants manage their deals here.
+* **Coupon Download (Hidden)**. Coupon download links use this menu item.
+* **Merchant Details (Hidden)**. Merchant pages use this menu item.
+
+The card names the types that are missing. Click `Menus`, choose a menu and create a menu item of each missing type. The two hidden menu items can go in a menu that no module shows, so visitors do not see them. See [Hidden menu item](/hiddenmenuitem/).
 
 ## Merchant user group
 

@@ -98,45 +98,52 @@ These are in `administrator/components/com_cmlivedeal/layouts/`, and your copies
 
 `badge`, `chart-canvas`, `chart-range`, `checked-out`, `cmldmedia`, `dashboard-card`, `dashboard-placeholder`, `deal-image`, `expired-label`, `external-link`, `field-addon`, `field-time`, `grid-state`, `map-button`, `map-canvas`, `setup-checks`, `setup-hide`, `sort-link`, `stats-table`, `stats-tabs`, `stats-tiles`, `tos-field`, `user-stats`.
 
-## Example: add a WhatsApp share button
+## Example: add a LinkedIn share button
 
-The share buttons under a deal come from the `deal.share` layout. Here is how to add WhatsApp to them.
+The share buttons under a deal come from the `deal.share` layout. You can turn the built-in buttons on and off in [Sharing](/configuration/sharing/) options. To add a network that is not built in, override the layout. Here is how to add LinkedIn.
 
 **1. Copy the file.** Copy `components/com_cmlivedeal/layouts/deal/share.php` to `templates/cassiopeia/html/layouts/com_cmlivedeal/deal/share.php`. Create the folders if they do not exist.
 
-**2. Open your copy.** Near the top it builds the links:
+**2. Open your copy.** Near the top it lists the networks in `$networks`. Each one has a share address, an icon and a language key:
 
 ```php
-$dealUrl      = urlencode($item->url);
-$imageUrl     = urlencode($item->thumbnail);
-$description  = urlencode($item->title);
-$facebookUrl  = 'https://www.facebook.com/sharer/sharer.php?u=' . $dealUrl;
-```
-
-**3. Add one line** for the WhatsApp address, just above `$links`:
-
-```php
-$whatsAppUrl = 'https://wa.me/?text=' . $description . '%20' . $dealUrl;
-```
-
-**4. Add one entry** to the `$links` array:
-
-```php
-$links = [
-    ['url' => $whatsAppUrl, 'icon' => 'fa-whatsapp', 'title' => 'COM_CMLIVEDEAL_SHARE_WHATSAPP'],
-    ['url' => $facebookUrl, 'icon' => 'fa-facebook', 'title' => 'COM_CMLIVEDEAL_SHARE_FACEBOOK'],
-    ['url' => $xUrl, 'icon' => 'fa-x-twitter', 'title' => 'COM_CMLIVEDEAL_SHARE_TWITTER'],
-    ['url' => $pinterestUrl, 'icon' => 'fa-pinterest', 'title' => 'COM_CMLIVEDEAL_SHARE_PINTEREST'],
+$networks = [
+    'facebook' => [
+        'url'   => 'https://www.facebook.com/sharer/sharer.php?u=' . $dealUrl,
+        'icon'  => 'fab fa-facebook',
+        'title' => 'COM_CMLIVEDEAL_SHARE_FACEBOOK',
+    ],
+    // ...
 ];
 ```
 
-The rest of the file draws the buttons for you, so there is nothing else to change.
+**3. Find the loop** just below it, which keeps the networks that are switched on in the options:
+
+```php
+foreach ($networks as $name => $network) {
+    if ($params->get('share_' . $name, 1)) {
+        $links[] = $network;
+    }
+}
+```
+
+**4. Add LinkedIn** right after the loop:
+
+```php
+$links[] = [
+    'url'   => 'https://www.linkedin.com/sharing/share-offsite/?url=' . $dealUrl,
+    'icon'  => 'fab fa-linkedin',
+    'title' => 'COM_CMLIVEDEAL_SHARE_LINKEDIN',
+];
+```
+
+The rest of the file draws the buttons for you, so there is nothing else to change. Because you add it after the loop, the LinkedIn button has no switch in the options; it is always shown.
 
 **5. Save and reload a deal.** The new button is there:
 
 ![/images/template-overrides-4-0-share.webp](/images/template-overrides-4-0-share.webp)
 
-`title` is a language key, used for screen readers. Add `COM_CMLIVEDEAL_SHARE_WHATSAPP` to your site's language override in `System > Language Overrides`, or use a key that already exists.
+`title` is a language key, used for screen readers. Add `COM_CMLIVEDEAL_SHARE_LINKEDIN` to your site's language override in `System > Language Overrides`, or use a key that already exists.
 
 ## Tip: reuse the original instead of copying it
 
