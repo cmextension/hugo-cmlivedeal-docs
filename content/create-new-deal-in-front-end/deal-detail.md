@@ -19,7 +19,7 @@ The popup is one page that the visitor scrolls. From top to bottom it has:
 *   **Description** and **Fine print**.
 *   **About** the merchant: the merchant's description, contact details and a map. The map is only shown when the merchant has coordinates.
 *   **Photos**, when **Show merchant photos** is enabled and the merchant has a photo other than the deal's own image.
-*   **Share this deal**: the deal's link with a `Copy link` button. After a click, the button says `Link copied` for 2 seconds. Next to it are share buttons for Facebook, X, Pinterest, WhatsApp, Telegram and email. On phones there is also a button that opens the phone's own share menu. You choose the buttons in [Sharing](/configuration/sharing/) options.
+*   **Share this deal**: the deal's link with a `Copy link` button. After a click, the button says `Link copied` for 2 seconds. Next to it are share buttons for Facebook, X, WhatsApp and email. On phones there is also a button that opens the phone's own share menu. You choose the buttons in [Sharing](/configuration/sharing/) options, where you can also turn on Pinterest and Telegram.
 *   At the bottom, always in view: the prices, what the visitor saves, how many coupons are left, and the `Get coupon` button.
 
 Custom fields are shown in the popup too.
