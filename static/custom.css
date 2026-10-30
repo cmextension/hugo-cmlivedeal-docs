@@ -1,0 +1,18 @@
+/* You can add custom styles here. */
+
+/* Frame screenshots so they stand apart from the text around them. */
+.gdoc-markdown img {
+  display: block;
+  box-sizing: border-box;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: var(--accent-color-lite);
+  border: 1px solid var(--accent-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Phone screenshots are tall; show them at phone width. */
+.gdoc-markdown img[src*="-phone"] {
+  max-width: 24rem;
+}
